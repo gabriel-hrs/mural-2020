@@ -105,7 +105,3 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
-
-.token-page {
-    background: url('./img/signup-background.png') contain center / no-repeat;
-}
