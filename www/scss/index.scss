@@ -1,3 +1,7 @@
+* {
+    font-family: "Raleway";
+}
+
 .token-page {
     background: url('./img/signup-background.png') contain center / no-repeat;
 
@@ -12,3 +16,13 @@
         margin-top: 50px;
     }
 }
+
+.field-grey {    
+    background: #EAEAEA;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #070707;
+}
+
