@@ -6,39 +6,55 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+    <script type="text/javascript" src="../assets/js/login.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
     <script type="text/javascript" src="js/db.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/teste.js"></script>
-    <script type="text/javascript" src="js/gulpfile.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>
 
-  <body class="token-page">
-    <section class="header">
-      <img src="img/logo.svg" alt="Logo do aplicativo Mural">
-      <nav class="nav nav-pills nav-justified">
-          <a href="#login" class="nav-item nav-link active">Login</a>
-          <a href="#cadastro" class="nav-item nav-link">Cadastro</a>
-      </nav>
-    </section>
-    <section id="cadastro" class="container wrapper">
-        <input class="field-outline-dark">Insira seu toque aqui</input>
-        <span href="#login" class="tab">Você já tem cadastro?</span>
-        <button type="submit" href="cadastro-usuario.html" class="tab">Cadastrar</button>
-    </section>
-    <section id="login" class="container wrapper">
-        <input class="field-outline-dark">Usuário</input>
-        <input class="field-outline-dark">Senha</input>
-        <button type="submit" href="cadastro-usuario.html" class="tab">Entrar</button>
-    </section>
+  <body class="token-page">  
+    <div id="carousel" class="carousel" data-ride="carousel">
+      <section class="container-fluid header">
+        <img src="img/logo.svg" alt="Logo do aplicativo Mural">
+        <nav class="nav nav-pills nav-justified">
+            <li data-target="#carousel" data-slide-to="0" class="active">
+              <a href="#login" class="nav-item nav-link active">Login</a>
+            </li>
+            <li data-target="#carousel" data-slide-to="1" class="active">
+              <a href="#cadastro" class="nav-item nav-link">Cadastro</a>
+            </li>
+        </nav>
+      </section>
+      <div class="carousel-inner">
+        <section id="cadastro" class="container wrapper active">
+          <div class="row">
+            <div class="col-md-9">
+              <input class="field-outline-dark">Insira seu token aqui</input>
+              <span href="#login" class="tab">Você já tem cadastro?</span>
+              <button type="submit" href="cadastro-usuario.html" class="tab">Cadastrar</button>
+            </div>
+          </div>
+        </section>
+        <section id="login" class="container wrapper">
+          <div class="row">
+            <div class="col-md-9">
+              <input class="field-outline-dark">Usuário</input>
+              <input class="field-outline-dark">Senha</input>
+              <button type="submit" href="cadastro-usuario.html" class="tab">Entrar</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <table class="userList"></table>
   </body>
 </html>

@@ -5,8 +5,13 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -watch www/scss -o www/assets/css"
+    "scss": "node-sass -watch www/scss -o www/assets/css",
+    "mix-dev": "npm run mix-development",
+    "mix-development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix-watch": "npm run mix-development -- --watch",
+    "mix-hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix-prod": "npm run mix-production",
+    "mix-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -26,12 +31,17 @@
   "devDependencies": {
     "bootstrap": "^4.4.1",
     "cordova-plugin-whitelist": "1",
+    "cross-env": "^5.2.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "http-server": "^0.12.1",
     "jquery": "^1.9.1",
+    "laravel-mix": "^5.0.0",
     "node-sass": "^4.13.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-livereload-plugin": "^1.2.0"
   },
   "cordova": {
     "plugins": {
