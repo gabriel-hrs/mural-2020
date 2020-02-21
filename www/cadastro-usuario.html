@@ -10,12 +10,63 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body class="signin-page">
+    <div class="header">
+      <a href="index.html" class="btn-back">⟵</a>
+      <h1 class="page-title">Cadastro %s</h1>
+    </div>
     <form>
-      <input type="text" name="nome" placeholder="Nome" id="user" />
-      <input type="text" name="senha" placeholder="Senha" id="userPassword" />
-      <input type="text" name="confirmarSenha" placeholder="Confirmar Senha" id="userPassword2" />
-      <input type="submit" value="Cadastrar" class="btn-confirm" />
+      <div class="input-group mb-3">
+        <div class="custom-file circle-button">
+          <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+          <input type="file" class="custom-file-input" id="inputGroupFile01">
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="nome" placeholder="Nome" id="user" aria-label="Nome completo" aria-describedby="Nome da pessoa">
+      </div>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="estados">
+          <option selected>Estado</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+        </select>
+      </div>
+      <div class="input-group mb-9">
+        <input type="text" class="form-control" name="cidade" placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
+      </div>
+      <div class="input-group mb-3">
+        <input type="password" class="form-control" name="senha" placeholder="Senha" id="user-password" aria-label="Senha" aria-describedby="Senha digitada">
+      </div>
+      <div class="input-group mb-3">
+        <input type="password" class="form-control" name="confirmarSenha" placeholder="Confirmar Senha" id="user-confirm-password" aria-label="Confirmar senha" aria-describedby="Senha novamente">
+      </div>
+      <input type="submit" value="Finalizar" class="btn-confirm" />
     </form>
   </body>
 </html>
