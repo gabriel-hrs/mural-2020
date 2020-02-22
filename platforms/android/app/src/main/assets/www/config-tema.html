@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+  </head>
+
+  <body class="config-tema-page container">
+    <div class="header">
+      <a href="mural.html" class="btn-back">⟵</a>
+      <h1 class="page-title">%s Tema</h1>
+    </div>
+    <form>
+      <section class="form-row">
+        <div class="input-group mb-3">
+          <div class="custom-file btn-circle">
+            <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+            <input type="file" class="custom-file-input" id="inputGroupFile01">
+          </div>
+        </div>
+      </section>
+
+      <section class="form-row">
+        <div class="input-group mb-3">
+          <h2>Nome</h2>
+          <input type="text" class="form-control" name="tema" placeholder="Digite o nome do tema" aria-label="Nome do tema" aria-describedby="Nome do tema">
+        </div>
+        <div class="input-group mb-3">
+          <h2>Descrição</h2>
+          <input type="textarea" class="form-control" name="descricao" placeholder="Descreva o tema brevemente" aria-label="Descrição do tema" aria-describedby="Descrição do tema">
+        </div>
+        <div class="input-group-text">
+          <h2>Fonte para referência</h2>
+          <input type="checkbox" class="checkbox" aria-label="Primeira mão">
+          <label>Fonte de primeira mão</label>
+          <input type="checkbox" class="checkbox" aria-label="Segunda mão">
+          <label>Fonte de segunda mão</label>
+        </div>
+      </section>
+
+      <section class="form-row">
+        <div class="input-group mb-3">
+          <h2>Formato do arquivo</h2>
+          <label class="tema-formato">Imagem</label>
+          <input id="toogle-check" type="checkbox" data-toggle="toggle" data-onstyle="success">
+          <label class="tema-formato">Documento</label>
+          <input id="toogle-check" type="checkbox" data-toggle="toggle" data-onstyle="success">
+          <label class="tema-formato">Texto</label>
+          <input id="toogle-check" type="checkbox" data-toggle="toggle" data-onstyle="success">
+          <label class="tema-formato">Áudio</label>
+          <input id="toogle-check" type="checkbox" data-toggle="toggle" data-onstyle="success">
+        </div>
+      </section>
+
+      <input type="submit" value="Adicionar" class="btn-confirm" />
+    </form>
+  </body>
+
+  <script src="components/metascripts.js"></script>
+  <script> makeHead('Login'); </script>
+</html>

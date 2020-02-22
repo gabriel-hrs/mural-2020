@@ -1,0 +1,40 @@
+/* Página Mural */
+
+
+/* Top bar */
+.mural-page .top-bar {
+    padding-left: 15px;
+}
+
+.mural-page .top-bar .form-control {
+    width: auto;
+    background: rgba(218, 218, 218, 0.6);
+    border-radius: 27px;
+}
+
+.mural-page .top-bar .page-link {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    margin: 0 auto;
+}
+
+.mural-page .top-bar .page-link .btn-circle {
+    padding: 0;
+}
+
+.mural-page .top-bar .page-link .btn-circle .icon {
+    max-height: 30px;
+}
+
+.mural-page .page-title {
+    margin: 0 auto;
+}
+
+
+/* Card */
+.mural-page .registro-card .school {
+    line-height: 180%;
+    color: rgba(0, 0, 0, 0.5);
+}

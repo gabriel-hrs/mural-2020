@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+  </head>
+
+  <body class="enviar-registro-page container">
+    <div class="header">
+      <a href="mural.html" class="btn-back">⟵</a>
+      <h1 class="page-title">Selecione um tema</h1>
+      <h2 class="page-title">Envie uma mídia</h2>
+    </div>
+
+    <form class="tema-form">
+        <div class="input-group mb-3">
+            <h3>Tema</h3>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="temas">
+                  <option selected>#tema</option>
+                  <option value="#de-onde-viemos">#de-onde-viemos</option>
+                  <option value="#cidade-de-sao-paulo">#cidade-de-sao-paulo</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <h3>Série</h3>
+            <input type="text" class="form-control" name="serie" placeholder="#8-serie" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <h3>Escola</h3>
+            <input type="text" class="form-control" name="escola" placeholder="#Anhembi-Morumbi" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <h3>Fonte</h3>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="fonte-field">
+                  <option selected>Coloque o link para indicar a fonte</option>
+                </select>
+            </div>
+        </div>     
+        <div class="input-group mb-3">
+            <h3>Resumo</h3>
+            <input type="textarea" class="form-control" name="resumo" placeholder="Digite seu resumo" aria-label="Resumo do registro" aria-describedby="Resumo do registro">
+        </div>
+        <button type="submit" class="btn-confirm">➝</button>
+    </form>
+
+    <form class="arquivo-form">
+        <div class="input-group mb-3">
+          <h2>Formato do arquivo</h2>
+          <button type="submit" class="btn-icon">
+                <img class="icon" src="img/formato-texto.svg" alt="Ícone para envio de texto">
+          </button>
+          <button type="submit" class="btn-icon">
+            <img class="icon" src="img/formato-audio.svg" alt="Ícone para envio de audio">
+          </button>
+          <button type="submit" class="btn-icon">
+            <img class="icon" src="img/formato-imagem.svg" alt="Ícone para envio de imagem">
+          </button>
+          <button type="submit" class="btn-icon">
+            <img class="icon" src="img/formato-video.svg" alt="Ícone para envio de video">
+          </button>
+          <button type="submit" class="btn-icon">
+            <img class="icon" src="img/formato-camera.svg" alt="Ícone para envio de imagem">
+          </button>
+          <button type="submit" class="btn-icon">
+            <img class="icon" src="img/formato-documento.svg" alt="Ícone para envio de documento">
+          </button>
+        </div>      
+        
+        <button type="submit" class="btn-confirm">➝</button>
+    </form>
+  </body>
+
+  <script src="components/metascripts.js"></script>
+  <script> makeHead('Login'); </script>
+</html>

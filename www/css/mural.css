@@ -1,0 +1,169 @@
+/* Página Mural */
+
+/* Top bar */
+.mural-page .top-bar {
+    padding-left: 15px;
+}
+
+.mural-page .top-bar .form-inline {
+    margin: 0 auto;
+}
+
+.mural-page .top-bar .form-inline .btn {
+    margin-right: -50px;
+    border: 0;
+}
+
+.mural-page .top-bar .form-control {
+    width: auto;
+    background-color: rgba(218, 218, 218, 0.6);
+    border-radius: 27px;
+    padding-left: 50px;
+}
+
+.mural-page .top-bar .page-link {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    margin: 0 auto;
+}
+
+.mural-page .top-bar .page-link .btn-circle {
+    padding: 0;
+}
+
+.mural-page .top-bar .page-link .btn-circle .icon {
+    max-height: 30px;
+}
+
+.mural-page .page-title {
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+/* Card */
+.mural-page .registro-card {
+    border: 0;
+    margin-bottom: 50px;
+}
+
+/* Card Header */
+.mural-page .card-header {
+    display: grid;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.mural-page .card-header .perfil {
+    grid-row: 1 / span 2;
+}
+
+.mural-page .card-header .perfil .icon {
+    max-height: 25px;
+    margin: 12px 15px;
+}
+
+.mural-page .card-header .name {
+    grid-column: 2;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.mural-page .card-header .school {
+    grid-column: 2;
+    line-height: 180%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mural-page .card-header #reject {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: start;
+}
+
+.mural-page .card-header #reject .icon {
+    min-height: 25px;
+}
+
+.mural-page .card-header #accept {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
+}
+
+.mural-page .card-header #accept .icon {
+    min-height: 25px;
+}
+
+/* Card Content */
+.mural-page .card-body {
+    padding: 0;
+}
+
+.mural-page .card-content .card-image {
+    position: relative;
+}
+
+.mural-page .card-content .registro-fonte {
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mural-page .card-content .registro-fonte span {
+    line-height: 180%;
+    color: #FFFFFF;
+}
+
+.mural-page .card-content .registro-tema {
+    border: 0.5px solid #C4C4C4;
+    padding: 10px;    
+}
+
+.mural-page .card-content .registro-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.mural-page .card-content .btn-comment,
+.mural-page .card-content .btn-share {
+    background: transparent;
+    border: 0;
+    margin-left: 20px;
+}
+
+.mural-page .card-content .registro-desc {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Card Footer */
+.mural-page .card-footer {
+    background-color: #FFFFFF;
+}
+
+.mural-page .card-footer .comment-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+
+.mural-page .card-footer .comment-row .perfil {
+    margin-right: 10px;
+}
+
+.mural-page .card-footer .comment-row .perfil .icon {
+    max-height: 25px;
+    margin: 12px 15px;
+}
+
+.mural-page .card-footer .comment-text {
+    color: rgba(0, 0, 0, 0.5);
+}

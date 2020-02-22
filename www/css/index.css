@@ -26,9 +26,56 @@
 	font-display: swap;
 }
 
-
-*{
-   margin:0 auto;
-   padding:0; 
+* {
+    font-family: Raleway;
 }
 
+.btn-circle {
+    border-radius: 50em;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: 400 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
+
+.default-photo {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+    top: -70px;
+}
+
+.menu-bar {
+    position: fixed;
+    top: calc(100% - 53px);
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.35);
+    left: 0;
+    min-width: 100vw;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.menu-bar .page-link {
+    border: 0;
+}

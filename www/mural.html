@@ -1,29 +1,31 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
 
   <body class="mural-page">
-    <nav class="top-bar nav nav-justified container">
-        <li class="page-link">
-            <a href="perfil.html" class="btn-circle nav-item nav-link"><img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil"></a>
-        </li>
+    <nav id="top-bar" class="nav-down top-bar nav nav-justified container">
         <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/icon-search.svg" alt="Ícone de lupa"></button>
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
         </form>
+        <li class="page-link my-2">
+            <a href="perfil.html" class="btn-circle nav-item nav-link"><img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil"></a>
+        </li>
     </nav>
 
-    <h1 class="page-title">Mural</h1>
+    <h1 class="container page-title">Mural</h1>
     
     <div class="wrapper">
         <div class="card registro-card">
             <div class="card-header">
-                <div class="perfil btn-circle">
+                <div class="perfil btn-circle default-photo">
                     <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
                 </div>
-                <h2 class="name">Nome do aluno</h2>
-                <span class="school">Nome da escola</span>
+                <h2 class="name text-bold">Nome do aluno</h2>
+                <span class="school">Nome da escola - 9º ano</span>
                 <a href="#" id="reject">
                     <img class="icon" src="img/icon-reject.svg" alt="Ícone para reprovação do registro">
                 </a>
@@ -31,27 +33,86 @@
                     <img class="icon" src="img/icon-accept.svg" alt="Ícone para aprovação do registro">
                 </a>
             </div>
-            <h1 class="page-title">Mural</h1>
             <div class="card-body">
                 <div class="card-content">
                     <div class="card-image">
-                        <img src="img/icon-search.svg" alt="Imagem do registro">
+                        <img src="img/registro-teste.png" alt="Imagem do registro">
                         <div class="registro-fonte">
                             <span>Foto tirada por minha mãe em 2005</span>
                         </div>
                     </div>
-                    <div class="registro-options">
-                        <span class="btn-pill registro-tema">Nome do tema</span>
-                        <button class="btn-comment"><img class="icon" src="img/icon-comment.svg" alt="Ícone de balão de comentário"></button>
-                        <button class="btn-share"><img class="icon" src="img/icon-share.svg" alt="Ícone de flecha para referência"></button>
+                    <div class="container registro-options">
+                        <span class="btn-circle registro-tema text-bold">Nome do tema</span>
+                        <div class="buttons">
+                            <button class="btn-comment"><img class="icon" src="img/icon-comment.svg" alt="Ícone de balão de comentário"></button>
+                            <button class="btn-share"><img class="icon" src="img/icon-share.svg" alt="Ícone de flecha para referência"></button>
+                        </div>
                     </div>
-                    <p class="registro-desc">Texto do registro</p>
+                    <p class="container registro-desc">Texto do registro</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class="section-title">Nenhum comentário</p>
+            </div>
+        </div>
+
+        <div class="card registro-card">
+            <div class="card-header">
+                <div class="perfil btn-circle default-photo">
+                    <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+                </div>
+                <h2 class="name text-bold">Nome do aluno</h2>
+                <span class="school">Nome da escola - 9º ano</span>
+                <a href="#" id="reject">
+                    <img class="icon" src="img/icon-reject.svg" alt="Ícone para reprovação do registro">
+                </a>
+                <a href="#" id="accept">
+                    <img class="icon" src="img/icon-accept.svg" alt="Ícone para aprovação do registro">
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="img/registro-teste.png" alt="Imagem do registro">
+                        <div class="registro-fonte">
+                            <span>Foto tirada por minha mãe em 2005</span>
+                        </div>
+                    </div>
+                    <div class="container registro-options">
+                        <span class="btn-circle registro-tema text-bold">Nome do tema</span>
+                        <div class="buttons">
+                            <button class="btn-comment"><img class="icon" src="img/icon-comment.svg" alt="Ícone de balão de comentário"></button>
+                            <button class="btn-share"><img class="icon" src="img/icon-share.svg" alt="Ícone de flecha para referência"></button>
+                        </div>
+                    </div>
+                    <p class="container registro-desc">Texto do registro</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <p class="section-title text-bold">Comentários</p>
+                <div class="comment-row">
+                    <div class="perfil btn-circle default-photo">
+                        <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+                    </div>
+                    <p class="comment-text">Minha família também é cristã.</h2>
+                </div>
+                <div class="comment-row">
+                    <div class="perfil btn-circle default-photo">
+                        <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+                    </div>
+                    <p class="comment-text">Eu também!</h2>
+                </div>
+                <div class="comment-row">
+                    <div class="perfil btn-circle default-photo">
+                        <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
+                    </div>
+                    <p class="comment-text">Gostei da sua história!</h2>
                 </div>
             </div>
         </div>
     </div>
     
-    <nav class="menu-bar nav nav-justified container-fluid">
+    <nav class="menu-bar nav nav-justified">
         <li class="page-link">
             <a href="mural.html" class="nav-item nav-link active"><img src="img/icon-home.svg" alt="Ícone de casa"></a>
         </li>
