@@ -9,12 +9,12 @@
       <h1 class="page-title">%s Turma</h1>
     </div>
     <form>
-      <div class="input-group mb-3">
-        <h2>Nome da Escola</h2>
+      <div class="input-group text-field mb-3">
+        <h2 class="label-field">Nome da Escola</h2>
         <input type="text" class="form-control" name="escola" placeholder="Digite o nome da escola" aria-label="Nome da escola" aria-describedby="Nome da escola">
       </div>
-      <div class="input-group-text">
-        <h2>Período</h2>
+      <div class="input-group checkbox-field mb-3">
+        <h2 class="label-field">Período</h2>
         <input type="checkbox" class="checkbox" aria-label="Manhã">
         <label>Manhã</label>
         <input type="checkbox" class="checkbox" aria-label="Tarde">
@@ -22,11 +22,11 @@
         <input type="checkbox" class="checkbox" aria-label="Noite">
         <label>Noite</label>
       </div>
-      <div class="input-group mb-3">
-        <h2>Série escolar</h2>
+      <div class="input-group text-field mb-3">
+        <h2 class="label-field">Série escolar</h2>
         <input type="text" class="form-control" name="serie" placeholder="Digite a série escolar da turma" aria-label="Série escolar" aria-describedby="Série escolar da turma">
       </div>
-      <div class="input-group mb-3">
+      <div class="input-group select-field mb-3">
         <select class="custom-select" id="estados">
           <option selected>Estado</option>
           <option value="AC">AC</option>
@@ -57,11 +57,10 @@
           <option value="SE">SE</option>
           <option value="TO">TO</option>
         </select>
-      </div>
-      <div class="input-group mb-9">
+      
         <input type="text" class="form-control" name="cidade" placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
       </div>
-      <input type="submit" value="Adicionar" class="btn-confirm" />
+      <input type="submit" value="Adicionar" class="btn-orange btn-confirm" />
     </form>
   </body>
 
