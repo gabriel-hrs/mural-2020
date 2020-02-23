@@ -1,3 +1,8 @@
+* {
+    font-family: Raleway;
+}
+
+/* Typography */
 @font-face {
     font-family: Raleway;
     src: url(../fonts/raleway-black.woff);
@@ -26,14 +31,6 @@
 	font-display: swap;
 }
 
-* {
-    font-family: Raleway;
-}
-
-.btn-circle {
-    border-radius: 50em;
-}
-
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -47,6 +44,11 @@ h6, .h6 {
     font-weight: 700 !important;
 }
 
+/* Components */
+.btn-circle {
+    border-radius: 50em;
+}
+
 .default-photo {
     max-height: 50px;
     max-width: 50px;
@@ -54,6 +56,7 @@ h6, .h6 {
     background-color:#606060;
 }
 
+/* Top menu */
 .top-bar {
     position: fixed;
     top: 0;
@@ -66,9 +69,10 @@ h6, .h6 {
     top: -70px;
 }
 
+/* Bottom menu */
 .menu-bar {
     position: fixed;
-    top: calc(100% - 53px);
+    top: calc(100% - 60px);
     box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.35);
     left: 0;
     min-width: 100vw;
@@ -78,4 +82,50 @@ h6, .h6 {
 
 .menu-bar .page-link {
     border: 0;
+}
+
+.menu-bar .page-link .nav-link {
+    padding: 0;
+}
+
+.menu-bar .page-link .nav-link * {
+    min-width: 1em;
+    min-height: 1.5em;
+    color: #000000;
+    background-color: #000000;
+    -webkit-mask-repeat: no-repeat;    
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.menu-bar .add-post {
+    background-color: #E83F3C;
+    border-radius: 50em;
+}
+
+.menu-bar .add-post:hover {
+    background-color: #B42F2D;
+}
+
+.menu-bar .btn-circle {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 10px !important;
+}
+
+.menu-bar .page-tag {
+    color: #000000;
+    font-size: 12px;
+}
+
+.menu-bar .page-tag.active {
+    color: #E83F3C;
+}
+
+.menu-bar .nav-link.active * {
+    background-color: #E83F3C;   
 }
