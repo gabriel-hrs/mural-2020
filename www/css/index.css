@@ -53,6 +53,18 @@ h6, .h6 {
     border-radius: 50em;
 }
 
+.btn-orange {
+    background-color: #E83F3C;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 .default-photo {
     max-height: 50px;
     max-width: 50px;
