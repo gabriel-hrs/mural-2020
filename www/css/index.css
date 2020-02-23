@@ -44,6 +44,10 @@ h6, .h6 {
     font-weight: 700 !important;
 }
 
+.page-title {
+    font-size: 26px;
+}
+
 /* Components */
 .btn-circle {
     border-radius: 50em;
@@ -56,6 +60,23 @@ h6, .h6 {
     background-color:#606060;
 }
 
+.wrapper {
+    margin-bottom: 65px;
+}
+
+.perfil.btn-circle {
+    max-height: 50px;
+    width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    text-align: center;
+    padding: 10px;
+}
+
+.perfil.btn-circle .icon {
+    max-height: 30px;
+}
+
 /* Top menu */
 .top-bar {
     position: fixed;
@@ -63,6 +84,23 @@ h6, .h6 {
     background-color: #ffffff;
     z-index: 1;
     transition: top 0.2s ease-in-out;
+    padding-left: 15px !important;
+}
+
+.top-bar .page-link {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    margin: 0 auto;
+}
+
+.top-bar .page-link .btn-circle {
+    padding: 0;
+}
+
+.top-bar .page-link .btn-circle .icon {
+    max-height: 30px;
 }
 
 .nav-up {
