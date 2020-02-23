@@ -11,7 +11,7 @@
     <form>
       <section class="form-row">
         <div class="input-group mb-3">
-          <div class="custom-file btn-circle">
+          <div class="custom-file perfil btn-circle">
             <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
             <input type="file" class="custom-file-input" id="inputGroupFile01">
           </div>
@@ -19,26 +19,24 @@
       </section>
 
       <section class="form-row">
-        <div class="input-group mb-3">
-          <h2>Nome</h2>
+        <div class="input-group text-field mb-3">
+          <h2 class="label-field">Nome</h2>
           <input type="text" class="form-control" name="tema" placeholder="Digite o nome do tema" aria-label="Nome do tema" aria-describedby="Nome do tema">
         </div>
-        <div class="input-group mb-3">
-          <h2>Descrição</h2>
+        <div class="input-group text-field mb-3">
+          <h2 class="label-field">Descrição</h2>
           <input type="textarea" class="form-control" name="descricao" placeholder="Descreva o tema brevemente" aria-label="Descrição do tema" aria-describedby="Descrição do tema">
         </div>
-        <div class="input-group-text">
-          <h2>Fonte para referência</h2>
+        <div class="input-group checkbox-field">
+          <h2 class="label-field">Fonte para referência</h2>
           <input type="checkbox" class="checkbox" aria-label="Primeira mão">
-          <label>Fonte de primeira mão</label>
+          <label>Referência de 1ª mão</label>
           <input type="checkbox" class="checkbox" aria-label="Segunda mão">
-          <label>Fonte de segunda mão</label>
+          <label>Referência de 2ª mão</label>
         </div>
-      </section>
-
-      <section class="form-row">
-        <div class="input-group mb-3">
-          <h2>Formato do arquivo</h2>
+      
+        <div class="input-group toogle-field mb-3">
+          <h2 class="label-field">Formato do arquivo</h2>
           <label class="tema-formato">Imagem</label>
           <input id="toogle-check" type="checkbox" data-toggle="toggle" data-onstyle="success">
           <label class="tema-formato">Documento</label>
@@ -50,7 +48,7 @@
         </div>
       </section>
 
-      <input type="submit" value="Adicionar" class="btn-confirm" />
+      <input type="submit" value="Adicionar" class="btn-orange btn-confirm" />
     </form>
   </body>
 
