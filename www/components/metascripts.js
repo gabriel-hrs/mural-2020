@@ -25,13 +25,18 @@ function makeHead(title, exceptionsCSS, exceptionsJS){
         head += exceptionsCSS;
     }
 
+    if(exceptionsCSS !== undefined){
+        exceptionsCSS.forEach(element => {
+            head += `<link rel="stylesheet" type="text/css" href="${element}">`; 
+        });
+    }
+
     let scripts = `
     
     <!-- ============== SCRIPTS ================= -->
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
     <script type="text/javascript" src="js/db.js"></script>
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/teste.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript" src="js/enviar-registro.js"></script>
@@ -42,7 +47,9 @@ function makeHead(title, exceptionsCSS, exceptionsJS){
     `
 
     if(exceptionsJS !== undefined){
-        scripts += exceptionsJS;
+        exceptionsJS.forEach(element => {
+            scripts += `<script src="${element}"></script>`; 
+        });
     }
 
     document.querySelector('head').innerHTML = head;

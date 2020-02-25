@@ -1,14 +1,43 @@
 $(document).ready(function() {
+
+  // =========== CAMPOS =====================
   var userName = $("#user");
-  var userPassword = $("#userPassword");
-  var userPasswordConfirm = $("#userPassword2");
+  var userState = $("#states");
+  var userCity = $("#user-city");
+  var userPassword = $('#user-password');
+  var userConfrimPassword = $('#user-confirm-password');
 
   $(".btn-confirm").on("click", function(event) {
+
     event.preventDefault();
-    create(userName.val(), userPassword.val());
+
+    if(userPassword.val() == userConfrimPassword.val()){
+      
+      firebase.auth().createUserWithEmailAndPassword(email, userPassword.val())
+      .then(function(sucess){
+  
+        create(
+          userName.val(), 
+          userState.val(), 
+          userCity.val()
+        );
+  
+      }).catch(function(error) {
+        
+        var errorCode = error.code;
+        var errorMessage = error.message;
+
+        console.log(errorMessage);
+        
+      });
+
+    }else{
+      console.log("Senhas diferentes!")
+    }
+
   });
 
-  function create(nome, senha) {
+  function create(nome) {
     let data = {
       nome: nome,
       senha: senha
@@ -19,6 +48,7 @@ $(document).ready(function() {
       .child("Usuarios")
       .push(data);
   }
+
 
   firebase
     .database()
