@@ -22,9 +22,11 @@
         <section id="cadastro" class="container wrapper active">
           <div class="row">
             <div class="group-field col-md-9">
-              <input class="field-grey" placeholder="Insira seu token aqui"></input>
-              <button type="submit" href="cadastro.html" class="btn-orange">Cadastrar</button>
-              <span href="#login" class="login-tab">Você já tem cadastro?</span>
+              <form class="sendToken">
+                <input class="field-grey" placeholder="Insira seu token aqui" id="token"></input>
+              </form>
+              <button type="submit" href="cadastro.html" class="tab">Cadastrar</button>
+              <span href="#login" class="tab">Você já tem cadastro?</span>
             </div>
           </div>
         </section>
@@ -43,5 +45,5 @@
   </body>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Login', undefined, ['js/cadastro.js']); </script>
+  <script> makeHead('Login', undefined, ['js/insertToken.js']); </script>
 </html>
