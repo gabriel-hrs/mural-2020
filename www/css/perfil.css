@@ -1,49 +1,49 @@
-/* Página de Cadastro */
+/* Página de Perfil */
 
-.signin-page {
+.perfil-page {
     background-color: #2D2F3C;
 }
 
 /* Header */
-.signin-page .header {
+.perfil-page .header {
     display: flex;
     justify-content: flex-start;
     margin: 30px 0;
 }
 
-.signin-page .header .btn-back {
+.perfil-page .header .btn-back {
     font-size: 30px;
     color: #ffffff;
 }
 
-.signin-page .header .page-title {
+.perfil-page .header .page-title {
     color: #ffffff;
     margin-left: 70px;
 }
 
 /* Formulário */
-.signin-page form .input-group {
+.perfil-page form .input-group {
     margin: 20px 0;
 }
 
-.signin-page form .input-group:first-of-type {
+.perfil-page form .input-group:first-of-type {
     justify-content: center;
     margin: 45px 0px !important;
 }
 
-.signin-page form .input-group .custom-file {
+.perfil-page form .input-group .custom-file {
     position: relative;
     max-width: 45px;
     min-height: 45px;
     padding: 50px;
 }
 
-.signin-page form .input-group .icon {
+.perfil-page form .input-group .icon {
     position: absolute;
     right: 39%;
 }
 
-.signin-page form .input-group .custom-file-input {
+.perfil-page form .input-group .custom-file-input {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -51,21 +51,21 @@
     left: 0;
 }
 
-.signin-page form .form-control {
+.perfil-page form .form-control {
     background: transparent;
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
 }
 
-.signin-page form .custom-select {
+.perfil-page form .custom-select {
     background: transparent;
     margin-right: 10px;
     max-width: fit-content;
     position: relative;
 }
 
-.signin-page form .custom-select:after {
+.perfil-page form .custom-select:after {
     /* content: '▼';
     padding: 12px 8px;
     position: absolute;

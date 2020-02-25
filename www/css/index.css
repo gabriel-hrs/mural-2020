@@ -49,8 +49,15 @@ h6, .h6 {
 }
 
 input.form-control[type=text],
-textarea.form-control[type=textarea] {
+textarea.form-control[type=textarea],
+input.form-control[type=email],
+input.form-control[type=password],
+select.custom-select {
     color: #ffffff !important;
+}
+
+select.custom-select option {
+    color: #000000;
 }
 
 /* Components */
