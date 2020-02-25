@@ -19,7 +19,10 @@
         <input type="text" class="form-control" name="nome" placeholder="Nome" id="user" aria-label="Nome completo" aria-describedby="Nome da pessoa">
       </div>
       <div class="input-group mb-3">
-        <select class="custom-select" id="estados">
+        <input type="email" class="form-control" name="email" placeholder="Digite uma conta de e-mail" id="email" aria-label="email" aria-describedby="email pessoal">
+      </div>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="states">
           <option selected>Estado</option>
           <option value="AC">AC</option>
           <option value="AL">AL</option>
@@ -61,7 +64,7 @@
       <input type="submit" value="Finalizar" class="btn-orange btn-confirm" />
     </form>
   </body>
-
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Login'); </script>
+  <script> makeHead('Cadastro',undefined,['cadastro.js']); </script>
 </html>
