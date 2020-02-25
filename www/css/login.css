@@ -1,0 +1,55 @@
+/* Página de Login/Cadastro */
+
+/* Header */
+.login-page .header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url('../img/back-login.png') center / contain no-repeat;
+}
+.login-page .header img {
+    margin-bottom: 70px;
+}
+
+.login-page .header .nav {
+    width: 100vw;
+}
+
+.login-page .header .nav li {
+    width: 50%;
+}
+
+.login-page .header .nav li .nav-item {
+    padding: 20px;
+    font-weight: 600;
+    color: rgba(50, 54, 67, 0.5);
+}
+
+.login-page .header .nav li.active .nav-item {
+    background-color: rgba(196, 196, 196, 0.4);
+}
+
+/* Wrapper */
+.login-page .wrapper {
+    position: absolute;
+}
+
+.login-page .wrapper .group-field .field-grey {
+    background-color: #EAEAEA;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    color: #070707;
+    border: 0;
+    padding: 15px;
+    min-width: 100%;
+    margin-top: 10px;
+}
+
+.login-page .wrapper .group-field .login-tab {
+    letter-spacing: 0.1em;
+    color: #000000;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
