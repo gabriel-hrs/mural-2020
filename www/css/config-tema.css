@@ -59,6 +59,10 @@
     border: 0;
 }
 
+.config-tema-page form .form-row .textarea-field .form-control {
+    min-height: 90px;
+}
+
 .config-tema-page form .form-row .checkbox-field {
     display: grid;
     grid-gap: 10px;

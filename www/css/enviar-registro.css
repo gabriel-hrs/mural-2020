@@ -1,0 +1,92 @@
+/* Enivar registro */
+
+/* Mark input boxes that gets an error on validation: */
+#regForm .invalid {
+    background-color: #ff6666 !important;
+}
+
+.tab {
+    display: none;
+}
+
+.enviar-registro-page  {
+    background-color: #2D2F3C;
+}
+
+/* Header */
+.enviar-registro-page .header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+.enviar-registro-page .header .btn-back {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.enviar-registro-page .header .page-title {
+    color: #ffffff;
+    margin-left: 35px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+/* Formulário */
+.enviar-registro-page form .text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar-registro-page form .label-field {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.enviar-registro-page form .text-field .readonly-input.form-control{
+    color: #bdbdbd;
+}
+
+.enviar-registro-page form .text-field .form-control {
+    background: rgba(183, 183, 183, 0.15);
+    border-radius: 4px;
+    border: 0;
+    color: #7d7d7d;
+}
+
+.enviar-registro-page form .textarea-field .form-control {
+    min-height: 90px;
+}
+
+.enviar-registro-page form .btn-confirm {
+    background-color: rgba(172, 172, 172, 0.4);
+    color: #ffffff;
+    border: 0;
+    font-size: 30px;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.enviar-registro-page form .format-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.enviar-registro-page form .format-field .btn-icon {
+    min-height: 130px;
+    background: rgba(13, 12, 12, 0.3);
+    border-radius: 12px;
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enviar-registro-page form .format-field .btn-icon .icon {
+    margin-bottom: 10px;
+}
+.enviar-registro-page form .format-field .btn-icon .label-field {
+    margin-bottom: 0;
+}
