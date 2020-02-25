@@ -48,6 +48,11 @@ h6, .h6 {
     font-size: 26px;
 }
 
+input.form-control[type=text],
+textarea.form-control[type=textarea] {
+    color: #ffffff !important;
+}
+
 /* Components */
 .btn-circle {
     border-radius: 50em;
