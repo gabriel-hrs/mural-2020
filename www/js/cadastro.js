@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   // =========== CAMPOS =====================
   var userName = $("#user");
+  var userEmail = $("#email");
   var userState = $("#states");
   var userCity = $("#user-city");
   var userPassword = $('#user-password');
@@ -13,7 +14,7 @@ $(document).ready(function() {
 
     if(userPassword.val() == userConfrimPassword.val()){
       
-      firebase.auth().createUserWithEmailAndPassword(email, userPassword.val())
+      firebase.auth().createUserWithEmailAndPassword(userEmail.val(), userPassword.val())
       .then(function(sucess){
   
         create(
@@ -32,15 +33,16 @@ $(document).ready(function() {
       });
 
     }else{
-      console.log("Senhas diferentes!")
+      console.log("Senhas diferentes!");
     }
 
   });
 
-  function create(nome) {
+  function create(nome, estado, cidade) {
     let data = {
       nome: nome,
-      senha: senha
+      estado: estado,
+      cidade: cidade
     };
     return firebase
       .database()
@@ -49,25 +51,26 @@ $(document).ready(function() {
       .push(data);
   }
 
-
-  firebase
-    .database()
-    .ref("Usuarios")
-    .on("value", function(snapshot) {
-      $(".userList").html("");
-
-      var lista = "<tr>";
-      lista += "<th> Nome </th>";
-      lista += "<th> Senha </th>";
-      lista += "</tr>";
-
-      snapshot.forEach(function(item) {
-        lista += "<tr>";
-        lista += "<td>" + item.val().nome + "</td>";
-        lista += "<td>" + item.val().senha + "</td>";
-        lista += "</tr>";
-      });
-
-      $(".userList").html(lista);
-    });
 });
+
+//   firebase
+//     .database()
+//     .ref("Usuarios")
+//     .on("value", function(snapshot) {
+//       $(".userList").html("");
+
+//       var lista = "<tr>";
+//       lista += "<th> Nome </th>";
+//       lista += "<th> Senha </th>";
+//       lista += "</tr>";
+
+//       snapshot.forEach(function(item) {
+//         lista += "<tr>";
+//         lista += "<td>" + item.val().nome + "</td>";
+//         lista += "<td>" + item.val().senha + "</td>";
+//         lista += "</tr>";
+//       });
+
+//       $(".userList").html(lista);
+//     });
+// 
