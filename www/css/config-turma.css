@@ -43,21 +43,70 @@
 
 .config-turma-page form .checkbox-field {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.config-turma-page form .checkbox-field .checkbox {
+.config-turma-page form .checkbox-field .container {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding-left: 30px;
     grid-row: 2;
+    position: relative;
+}
+
+.config-turma-page form .checkbox-field .container .checkbox {
     justify-self: end;
     margin-right: 8px;
     align-self: center;
+
+    /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
-.config-turma-page form .checkbox-field label {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
-    margin-bottom: 0;
-    grid-row: 2;
+/* Create a custom checkbox */
+.config-turma-page form .checkbox-field .container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+ 
+/* When the checkbox is checked, add a blue background */
+.config-turma-page form .checkbox-field .container input:checked ~ .checkmark {
+    background-color: #22D499;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.config-turma-page form .checkbox-field .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.config-turma-page form .checkbox-field .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.config-turma-page form .checkbox-field .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .config-turma-page form .select-field .custom-select {
@@ -72,4 +121,4 @@
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
-}
+}  

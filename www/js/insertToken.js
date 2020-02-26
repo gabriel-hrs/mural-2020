@@ -13,25 +13,19 @@ $(document).ready(function() {
         .ref("Tokens")
         .on("value", function(snapshot) {
     
-        snapshot.forEach(function(item) {
-            if(item.val().key == token.val()){
-                alert("token válido do tipo: "+item.val().tipo);
-            }else{
-                erro = "Token inválido";
-            }
-        });
+            snapshot.forEach(function(item) {
+                if(item.val().key == token.val()) {
+                    alert("token válido do tipo: "+item.val().tipo);
+                } else {
+                    erro = "Token inválido";
+                }
+            });
 
-        if(erro !== ""){
-            alert(erro);
-            erro = "";
-        }
-       
+            if(erro !== "") {
+                alert(erro);
+                erro = "";
+            }
+        
+        });
     });
-  
-    });
-  
-    
-  
-  });
-  
-  
+}); 

@@ -73,11 +73,13 @@
     grid-column: 1 / span 2;
 }
 
-.config-tema-page form .form-row .checkbox-field label {
-    max-width: fit-content;
+.config-tema-page form .form-row .checkbox-field .container {
+    grid-column: 1 / span 2;
     grid-row: 3;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
+    position: relative;
+    padding-left: 35px;
 }
 
 .config-tema-page form .form-row .checkbox-field label:first-of-type {
@@ -92,6 +94,55 @@
     grid-row: 3;
     min-width: 20px;
     min-height: 20px;
+
+    /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.config-tema-page form .form-row .checkbox-field .container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+ 
+/* When the checkbox is checked, add a blue background */
+.config-tema-page form .form-row .checkbox-field .container input:checked ~ .checkmark {
+    background-color: #22D499;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.config-tema-page form .form-row .checkbox-field .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.config-tema-page form .form-row .checkbox-field .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.config-tema-page form .form-row .checkbox-field .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .config-tema-page form .form-row .toogle-field {

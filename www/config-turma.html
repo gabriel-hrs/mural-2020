@@ -9,24 +9,33 @@
       <h1 class="page-title">%s Turma</h1>
     </div>
     <form>
-      <div class="input-group text-field mb-3">
+      <div class="input-group text-field mb-4">
         <h2 class="label-field">Nome da Escola</h2>
         <input type="text" class="form-control" name="escola" placeholder="Digite o nome da escola" aria-label="Nome da escola" aria-describedby="Nome da escola">
       </div>
-      <div class="input-group checkbox-field mb-3">
+      <div class="input-group checkbox-field mb-4">
         <h2 class="label-field">Período</h2>
-        <input type="checkbox" class="checkbox" aria-label="Manhã">
-        <label>Manhã</label>
-        <input type="checkbox" class="checkbox" aria-label="Tarde">
-        <label>Tarde</label>
-        <input type="checkbox" class="checkbox" aria-label="Noite">
-        <label>Noite</label>
+        <label class="container">
+          <input type="checkbox" class="checkbox" aria-label="Manhã">
+          <span class="checkmark"></span>
+          Manhã
+        </label>
+        <label class="container">
+          <input type="checkbox" class="checkbox" aria-label="Tarde">
+          <span class="checkmark"></span>
+          Tarde
+        </label>
+        <label class="container">
+          <input type="checkbox" class="checkbox" aria-label="Noite">
+          <span class="checkmark"></span>
+          Noite
+        </label>
       </div>
-      <div class="input-group text-field mb-3">
+      <div class="input-group text-field mb-4">
         <h2 class="label-field">Série escolar</h2>
         <input type="text" class="form-control" name="serie" placeholder="Digite a série escolar da turma" aria-label="Série escolar" aria-describedby="Série escolar da turma">
       </div>
-      <div class="input-group select-field mb-3">
+      <div class="input-group select-field mb-4">
         <select class="custom-select" id="estados">
           <option selected>Estado</option>
           <option value="AC">AC</option>

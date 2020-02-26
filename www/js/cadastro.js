@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   // =========== CAMPOS =====================
+  var userPhoto = $("#photo")
   var userName = $("#user");
   var userEmail = $("#email");
   var userState = $("#states");
@@ -18,6 +19,7 @@ $(document).ready(function() {
       .then(function(sucess){
   
         create(
+          userPhoto.val(),
           userName.val(), 
           userState.val(), 
           userCity.val()
@@ -32,14 +34,15 @@ $(document).ready(function() {
         
       });
 
-    }else{
+    } else{
       console.log("Senhas diferentes!");
     }
 
   });
 
-  function create(nome, estado, cidade) {
+  function create(foto, nome, estado, cidade) {
     let data = {
+      foto: foto,
       nome: nome,
       estado: estado,
       cidade: cidade
