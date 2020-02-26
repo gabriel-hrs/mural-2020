@@ -1,0 +1,124 @@
+/* Adicionar/Editar Turma */
+
+.config-turma-page  {
+    background-color: #2D2F3C;
+}
+
+/* Header */
+.config-turma-page .header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+.config-turma-page .header .btn-back {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.config-turma-page .header .page-title {
+    color: #ffffff;
+    margin-left: 70px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+/* Formulário */
+.config-turma-page form .text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.config-turma-page form .label-field {
+    font-size: 20px;
+    color: #ffffff;
+    grid-column: 1 / span 4;
+}
+
+.config-turma-page form .text-field .form-control {
+    background: rgba(183, 183, 183, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.config-turma-page form .checkbox-field {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.config-turma-page form .checkbox-field .container {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding-left: 30px;
+    grid-row: 2;
+    position: relative;
+}
+
+.config-turma-page form .checkbox-field .container .checkbox {
+    justify-self: end;
+    margin-right: 8px;
+    align-self: center;
+
+    /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.config-turma-page form .checkbox-field .container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+ 
+/* When the checkbox is checked, add a blue background */
+.config-turma-page form .checkbox-field .container input:checked ~ .checkmark {
+    background-color: #22D499;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.config-turma-page form .checkbox-field .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.config-turma-page form .checkbox-field .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.config-turma-page form .checkbox-field .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.config-turma-page form .select-field .custom-select {
+    background: transparent;
+    margin-right: 10px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.config-turma-page form .select-field .form-control {
+    background: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}  

@@ -1,3 +1,8 @@
+* {
+    font-family: Raleway;
+}
+
+/* Typography */
 @font-face {
     font-family: Raleway;
     src: url(../fonts/raleway-black.woff);
@@ -26,10 +31,6 @@
 	font-display: swap;
 }
 
-.btn-circle {
-    border-radius: 50em;
-}
-
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -43,9 +44,195 @@ h6, .h6 {
     font-weight: 700 !important;
 }
 
+.page-title {
+    font-size: 26px;
+}
+
+input.form-control[type=text],
+textarea.form-control[type=textarea],
+input.form-control[type=email],
+input.form-control[type=password],
+select.custom-select {
+    color: #ffffff !important;
+}
+
+select.custom-select option {
+    color: #000000;
+}
+
+/* Components */
+.btn-circle {
+    border-radius: 50em;
+}
+
+.btn-orange {
+    background-color: #E83F3C;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 .default-photo {
     max-height: 50px;
     max-width: 50px;
     border-radius: 50em;
     background-color:#606060;
+}
+
+.wrapper {
+    margin-bottom: 65px;
+}
+
+.perfil.btn-circle {
+    max-height: 50px;
+    width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    text-align: center;
+    padding: 10px;
+}
+
+.perfil.btn-circle .icon {
+    max-height: 30px;
+}
+
+/* Top menu */
+.top-bar {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    transition: top 0.2s ease-in-out;
+    padding-left: 15px !important;
+}
+
+.top-bar .page-link {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50em;
+    background-color:#606060;
+    margin: 0 auto;
+}
+
+.top-bar .page-link .btn-circle {
+    padding: 0;
+}
+
+.top-bar .page-link .btn-circle .icon {
+    max-height: 30px;
+}
+
+.nav-up {
+    top: -70px;
+}
+
+/* Bottom menu */
+.menu-bar {
+    position: fixed;
+    padding: 10px 0;
+    top: calc(100% - 80px);
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.35);
+    left: 0;
+    min-width: 100vw;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.menu-bar .page-link {
+    border: 0;
+}
+
+.menu-bar > .page-link {
+    width: 20%;
+    text-align: center;
+}
+
+.menu-bar > .page-link:last-of-type {
+    padding: .5rem 0;
+}
+
+.menu-bar .page-link .nav-link {
+    padding: 0;
+}
+
+.menu-bar .page-link .nav-link * {
+    min-width: 1em;
+    min-height: 1.5em;
+    color: #000000;
+    background-color: #000000;
+    -webkit-mask-repeat: no-repeat;    
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.menu-bar .add-post {
+    background-color: #E83F3C;
+    border-radius: 50em;
+    max-width: 60px;
+}
+
+.menu-bar .add-post:hover {
+    background-color: #B42F2D;
+}
+
+.menu-bar .btn-circle {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 10px !important;
+}
+
+.menu-bar .page-tag {
+    color: #000000;
+    font-size: 12px;
+}
+
+.menu-bar .page-tag.active {
+    color: #E83F3C;
+}
+
+.menu-bar .nav-link.active * {
+    background-color: #E83F3C;   
+}
+
+/* Toggle menu */
+.toggle-nav {
+    opacity: 0;
+    overflow:hidden;
+    transition:flex 0.3s ease-out; /* note that we're transitioning flex, not height! */
+    height:auto;
+    flex: 0;
+    position: absolute;
+    bottom: 100%;
+    width: 100vw;
+    padding: 10px 0;
+    background-color:#E83F3C;
+    border-radius: 24px 24px 0 0;
+}
+
+.toggle-nav .page-link {
+    width: 50%;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.toggle-nav .page-link:first-of-type {
+    border-right: 1px solid #ffffff;
+}
+
+.toggle-nav .page-link .nav-link {
+    color: #ffffff;
+}
+
+.toggle-up {
+    opacity: 1;
+    flex: 1;
 }

@@ -5,8 +5,8 @@
 
   <body class="notificacoes-page">
     <nav class="top-bar nav nav-justified container">
-        <h1 class="page-title">Notificações</h1>
-        <li class="page-link">
+        <h1 class="page-title my-2">Notificações</h1>
+        <li class="page-link my-2">
             <a href="perfil.html" class="btn-circle nav-item nav-link"><img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil"></a>
         </li>
     </nav>
@@ -17,41 +17,45 @@
                 <div class="perfil btn-circle">
                     <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
                 </div>
-                <h2 class="name">Aluno X comentou em sua publicação.</h2>
-                <span>Aluno - 1 dia atrás</span>
+                <h2 class="name">Aluno X<span> comentou em sua publicação.</span></h2>
+                <p class="notificacao-extra">Aluno<span> - 1 dia atrás</span></p>
             </li>
-            <li class="list-group-item disable">
+            <li class="list-group-item disabled">
                 <div class="perfil btn-circle">
                     <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
                 </div>
-                <h2 class="name">Aluno Y citou sua publicação.</h2>
-                <span>Aluno - 2 dia atrás</span>
+                <h2 class="name">Aluno Y<span> citou sua publicação.</span></h2>
+                <p class="notificacao-extra">Aluno<span> - 2 dia atrás</span></p>
             </li>
             <li class="list-group-item">
                 <div class="perfil btn-circle">
                     <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
                 </div>
-                <h2 class="name">Professor aprovou sua publicação.</h2>
-                <span>Professor - 3 dia atrás</span>
+                <h2 class="name">Professor<span> aprovou sua publicação.</span></h2>
+                <p class="notificacao-extra">Professor<span> - 3 dia atrás</span></p>
             </li>
         </ul>
     </div>
     
-    <nav class="menu-bar nav nav-justified container-fluid">
+    <nav class="menu-bar nav nav-justified">
         <li class="page-link">
-            <a href="mural.html" class="nav-item nav-link"><img src="img/icon-home.svg" alt="Ícone de casa"></a>
+            <a href="mural.html" class="nav-item nav-link"><div style="mask-image: url('img/icon-home.svg'); -webkit-mask-image: url('img/icon-home.svg');" alt="Ícone de casa"></div></a>
+            <span class="page-tag">Mural</span>
         </li>
         <li class="page-link">
-            <a href="turma.html" class="nav-item nav-link"><img src="img/icon-people.svg" alt="Ícone de pessoas"></a>
+            <a href="turma.html" class="nav-item nav-link"><div style="mask-image: url('img/icon-people.svg'); -webkit-mask-image: url('img/icon-people.svg');" alt="Ícone de pessoas"></div></a>
+            <span class="page-tag">Turmas</span>
         </li>
-        <li class="page-link">
+        <li class="add-post page-link">
             <a href="#" class="btn-circle nav-item nav-link">+</a>
         </li>
         <li class="page-link">
-            <a href="temas.html" class="nav-item nav-link"><img src="img/icon-bookmark.svg" alt="Ícone de marcador de livro"></a>
+            <a href="temas.html" class="nav-item nav-link"><div style="mask-image: url('img/icon-bookmark.svg'); -webkit-mask-image: url('img/icon-bookmark.svg');" alt="Ícone de marcador de livro"></div></a>
+            <span class="page-tag">Temas</span>
         </li>
         <li class="page-link">
-            <a href="notificacoes.html" class="nav-item nav-link active"><img src="img/icon-bell.svg" alt="Ícone de sino"></a>
+            <a href="notificacoes.html" class="nav-item nav-link active"><div style="mask-image: url('img/icon-bell.svg'); -webkit-mask-image: url('img/icon-bell.svg');" alt="Ícone de sino"></div></a>
+            <span class="page-tag active">Notificações</span>
         </li>
     </nav>
   </body>

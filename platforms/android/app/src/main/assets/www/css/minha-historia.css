@@ -1,0 +1,151 @@
+/* Página Minha história */
+
+/* Top bar */
+.minha-historia-page .top-bar .form-inline {
+    margin: 0 auto;
+}
+
+.minha-historia-page .top-bar .form-inline .btn {
+    margin-right: -50px;
+    border: 0;
+}
+
+.minha-historia-page .top-bar .form-control {
+    width: auto;
+    background-color: rgba(218, 218, 218, 0.6);
+    border-radius: 27px;
+    padding-left: 50px;
+}
+
+.minha-historia-page .page-title {
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+/* Card */
+.minha-historia-page .registro-card {
+    border: 0;
+    margin-bottom: 50px;
+}
+
+/* Card Header */
+.minha-historia-page .card-header {
+    display: grid;
+    grid-template-columns: min-content;
+    grid-gap: 0 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.minha-historia-page .card-header .perfil {
+    grid-row: 1 / span 2;
+}
+
+.minha-historia-page .card-header .perfil .icon {
+    max-height: 25px;
+    /* margin: 12px 15px; */
+}
+
+.minha-historia-page .card-header .name {
+    grid-column: 2;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.minha-historia-page .card-header .school {
+    grid-column: 2;
+    line-height: 180%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.minha-historia-page .card-header #reject {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: start;
+}
+
+.minha-historia-page .card-header #reject .icon {
+    min-height: 25px;
+}
+
+.minha-historia-page .card-header #accept {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
+}
+
+.minha-historia-page .card-header #accept .icon {
+    min-height: 25px;
+}
+
+/* Card Content */
+.minha-historia-page .card-body {
+    padding: 0;
+}
+
+.minha-historia-page .card-content .card-image {
+    position: relative;
+}
+
+.minha-historia-page .card-content .registro-fonte {
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.minha-historia-page .card-content .registro-fonte span {
+    line-height: 180%;
+    color: #FFFFFF;
+}
+
+.minha-historia-page .card-content .registro-tema {
+    border: 0.5px solid #C4C4C4;
+    padding: 10px;    
+}
+
+.minha-historia-page .card-content .registro-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.minha-historia-page .card-content .btn-comment,
+.minha-historia-page .card-content .btn-share {
+    background: transparent;
+    border: 0;
+    margin-left: 20px;
+}
+
+.minha-historia-page .card-content .registro-desc {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Card Footer */
+.minha-historia-page .card-footer {
+    background-color: #FFFFFF;
+}
+
+.minha-historia-page .card-footer .comment-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+
+.minha-historia-page .card-footer .comment-row .perfil {
+    margin-right: 10px;
+}
+
+.minha-historia-page .card-footer .comment-row .perfil .icon {
+    max-height: 25px;
+    margin: 3px 6px;
+}
+
+.minha-historia-page .card-footer .comment-text {
+    color: rgba(0, 0, 0, 0.5);
+}

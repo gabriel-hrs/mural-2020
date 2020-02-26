@@ -28,11 +28,17 @@
 
 .login-page .header .nav li.active .nav-item {
     background-color: rgba(196, 196, 196, 0.4);
+    pointer-events: none;
 }
 
 /* Wrapper */
-.login-page .wrapper {
-    position: absolute;
+.login-page .wrapper .group-field {
+    margin: 50px 20px 0;
+}
+
+.login-page .wrapper .group-field .btn-orange {
+    margin: 25px;
+    max-width: -webkit-fill-available;
 }
 
 .login-page .wrapper .group-field .field-grey {
@@ -52,4 +58,26 @@
     opacity: 0.5;
     display: flex;
     justify-content: center;
+}
+
+#carousel-inner {
+    position: relative;
+}
+
+#slide-login {
+    transition: all .5s ease;
+}
+
+#slide-login.active {
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+#slide-cadastro {
+    transition: all .5s ease;
+}
+
+#slide-cadastro.active {
+    position: absolute;
+    transform: translateX(100%);
 }

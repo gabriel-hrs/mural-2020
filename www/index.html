@@ -9,17 +9,17 @@
       <section class="header">
         <img src="img/logo.svg" alt="Logo do aplicativo Mural">
         <nav class="nav nav-pills nav-justified">
-          <li data-target="#carousel" data-slide-to="0" class="active">
-            <a href="#login" class="nav-item nav-link active">Login</a>
+          <li data-target="#carousel" data-slide-to="0" class="slide-tab active">
+            <a id="login" href="#login" class="nav-item nav-link">Login</a>
           </li>
-          <li data-target="#carousel" data-slide-to="1">
-            <a href="#cadastro" class="nav-item nav-link">Cadastro</a>
+          <li data-target="#carousel" data-slide-to="1" class="slide-tab">
+            <a id="cadastro" href="#cadastro" class="nav-item nav-link">Cadastro</a>
           </li>
         </nav>
       </section>
 
       <div class="carousel-inner">
-        <section id="cadastro" class="container wrapper active">
+        <section id="slide-cadastro" class="container wrapper active">
           <div class="row">
             <div class="group-field col-md-9">
               <form class="sendToken">
@@ -30,11 +30,11 @@
             </div>
           </div>
         </section>
-        <section id="login" class="container wrapper">
+        <section id="slide-login" class="container wrapper">
           <div class="row">
             <div class="group-field col-md-9">
-              <input class="field-grey" placeholder="Usuário"></input>
-              <input class="field-grey" placeholder="Senha"></input>
+              <input type="text" class="field-grey" placeholder="Usuário"></input>
+              <input type="password" class="field-grey" placeholder="Senha"></input>
               <button type="submit" href="mural.html" class="btn-orange">Entrar</button>
             </div>
           </div>
@@ -44,6 +44,7 @@
     </div>
   </body>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/login.js"></script>
   <script src="components/metascripts.js"></script>
   <script> makeHead('Login', undefined, ['js/insertToken.js']); </script>
 </html>

@@ -1,0 +1,163 @@
+/* Adicionar/Editar Tema */
+
+.config-tema-page  {
+    background-color: #2D2F3C;
+}
+
+/* Header */
+.config-tema-page .header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+.config-tema-page .header .btn-back {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.config-tema-page .header .page-title {
+    color: #ffffff;
+    margin-left: 70px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+/* Formulário */
+.config-tema-page form .input-group {
+    margin: 20px 0;
+}
+
+.config-tema-page form .input-group:first-of-type {
+    justify-content: center;
+}
+
+.config-tema-page form .input-group .custom-file {
+    max-width: 45px;
+    min-height: 45px;
+    padding: 50px;
+}
+
+.config-tema-page form .input-group .icon {
+    position: absolute;
+    right: 39%;
+}
+
+.config-tema-page form .form-row .text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.config-tema-page form .form-row .label-field {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.config-tema-page form .form-row .text-field .form-control {
+    background: rgba(183, 183, 183, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.config-tema-page form .form-row .textarea-field .form-control {
+    min-height: 90px;
+}
+
+.config-tema-page form .form-row .checkbox-field {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 20px auto;
+}
+
+.config-tema-page form .form-row .checkbox-field .label-field {
+    grid-column: 1 / span 2;
+}
+
+.config-tema-page form .form-row .checkbox-field .container {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.config-tema-page form .form-row .checkbox-field label:first-of-type {
+    grid-row: 2;
+}
+
+.config-tema-page form .form-row .checkbox-field .checkbox:first-of-type {
+    grid-row: 2;
+}
+
+.config-tema-page form .form-row .checkbox-field .checkbox {
+    grid-row: 3;
+    min-width: 20px;
+    min-height: 20px;
+
+    /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.config-tema-page form .form-row .checkbox-field .container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+ 
+/* When the checkbox is checked, add a blue background */
+.config-tema-page form .form-row .checkbox-field .container input:checked ~ .checkmark {
+    background-color: #22D499;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.config-tema-page form .form-row .checkbox-field .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.config-tema-page form .form-row .checkbox-field .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.config-tema-page form .form-row .checkbox-field .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.config-tema-page form .form-row .toogle-field {
+    display: grid;
+}
+
+.config-tema-page form .form-row .toogle-field .label-field {
+    grid-column: 1 / span 2;
+}
+
+.config-tema-page form .form-row .toogle-field label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+
+.config-tema-page form .form-row .toogle-field #toogle-check {
+    justify-self: center;
+}

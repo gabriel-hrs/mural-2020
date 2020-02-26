@@ -4,16 +4,12 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="FirebasePlugin">
-        <param name="android-package" value="org.apache.cordova.firebase.FirebasePlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <name>HelloCordova</name>
+    <name>Mural</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        GAbriel Henrique
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -24,5 +20,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon density="mdpi" height="57" platform="android" src="www/img/favicon.png" width="57" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
 </widget>

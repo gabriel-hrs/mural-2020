@@ -1,0 +1,43 @@
+/* Página Notificações */
+
+/* Top bar */
+.notificacoes-page .page-title {
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* Wrapper */
+.notificacoes-page .wrapper {
+    margin-top: 82px;
+}
+
+.notificacoes-list .list-group-item {
+    display: grid;
+    grid-gap: 5px 10px;
+}
+
+.notificacoes-list .list-group-item.disabled {
+    background: rgba(196, 196, 196, 0.2);
+}
+
+.notificacoes-list .name {
+    font-size: 20px;
+    grid-column: 2;
+    font-weight: 700;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.notificacao-list .name span {
+    font-weight: 400;
+}
+
+.notificacoes-list .notificacao-extra {
+    grid-column: 2;
+    font-weight: 700;
+}
+
+.notificacoes-list .notificacao-extra span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}

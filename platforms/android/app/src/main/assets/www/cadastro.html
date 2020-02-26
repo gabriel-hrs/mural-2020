@@ -10,16 +10,19 @@
     </div>
     <form>
       <div class="input-group mb-3">
-        <div class="custom-file btn-circle">
+        <div class="custom-file btn-circle perfil">
           <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
-          <input type="file" class="custom-file-input" id="inputGroupFile01">
+          <input type="file" class="custom-file-input" id="photo">
         </div>
       </div>
       <div class="input-group mb-3">
         <input type="text" class="form-control" name="nome" placeholder="Nome" id="user" aria-label="Nome completo" aria-describedby="Nome da pessoa">
       </div>
       <div class="input-group mb-3">
-        <select class="custom-select" id="estados">
+        <input type="email" class="form-control" name="email" placeholder="Digite uma conta de e-mail" id="email" aria-label="email" aria-describedby="email pessoal">
+      </div>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="states">
           <option selected>Estado</option>
           <option value="AC">AC</option>
           <option value="AL">AL</option>
@@ -49,8 +52,7 @@
           <option value="SE">SE</option>
           <option value="TO">TO</option>
         </select>
-      </div>
-      <div class="input-group mb-9">
+
         <input type="text" class="form-control" name="cidade" placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
       </div>
       <div class="input-group mb-3">
@@ -59,10 +61,10 @@
       <div class="input-group mb-3">
         <input type="password" class="form-control" name="confirmarSenha" placeholder="Confirmar Senha" id="user-confirm-password" aria-label="Confirmar senha" aria-describedby="Senha novamente">
       </div>
-      <input type="submit" value="Finalizar" class="btn-confirm" />
+      <input type="submit" value="Finalizar" class="btn-orange btn-confirm" />
     </form>
   </body>
-
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Login'); </script>
+  <script> makeHead('Cadastro',undefined,['js/cadastro.js']); </script>
 </html>

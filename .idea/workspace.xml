@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="388d3b71-c754-45a8-9cb6-8a9d0c8ef1d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/create" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/create" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/create.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/create.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ignored" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ignored.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nopt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/shjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/shjs.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tape" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tape.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/android-versions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/android-versions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/array-ify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/array-ify/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/big-integer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/big-integer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bplist-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bplist-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/compare-func/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/compare-func/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-android/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-android/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-common/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-common/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dedent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dedent/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/example/defined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/readme.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/test/def.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/defined/test/falsy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dot-prop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dot-prop/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/bin/ignored" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/test/.1-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/test/1-expected" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dotignore/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/elementtree/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/elementtree/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/endent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/endent/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-parse/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fast-json-parse/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/for-each/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-extra/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fs-extra/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-obj/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-obj/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/objectorarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/objectorarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/objectorarray/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/plist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/plist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/properties-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/properties-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/example/resume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/readme.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/test/resume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resumer/test/through.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sax/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shelljs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shelljs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.codepointat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/string.prototype.codepointat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/.github/workflows/rebase.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/auto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/implementation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/test/shimmed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string.prototype.trim/test/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-bom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-bom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/bin/tape" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/fail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/nested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/nested_fail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/not_enough.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/static/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/static/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/stream/object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/stream/tap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/stream/test/x.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/stream/test/y.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/throw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/timing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/too_many.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/example/two.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/lib/default_stream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/lib/results.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/lib/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/readme.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/add-subtest-async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/anonymous-fn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/anonymous-fn/test-wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/bound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/browser/asserts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/child_ordering.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/circular-things.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/create_multiple_streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/deep-equal-failure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/deep.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/default-messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/double_end.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/double_end/double.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/end-as-callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/fail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/ok.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/second.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/todo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/todo_fail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exit/too_few.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/exposed-harness.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/fail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/has spaces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/.ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/fake_node_modules/stub1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/fake_node_modules/stub2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test/stub1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test/stub2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test/sub/sub.stub1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test/sub/sub.stub2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore/test2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/ignore_from_gitignore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/many.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/match.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/max_listeners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/max_listeners/source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/messages/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/nested-async-plan-noend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/nested-sync-noplan-noend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/nested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/nested2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/no_callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/not-deep-equal-failure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/not-equal-failure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/objectMode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/onFailure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/onFinish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only-twice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/only5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/plan_optional.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/require.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/require/a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/require/b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/require/test-a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/require/test-b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/skip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/skip_explanation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/stackTrace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/subcount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/subtest_and_async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/subtest_plan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/throws.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/timeout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/timeoutAfter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/todo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/todo_explanation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/todo_single.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/too_many.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tape/test/undef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/underscore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmldom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmldom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/components/metascripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/components/metascripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/config-tema.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/config-tema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/config-turma.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/config-turma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/mural.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/css/mural.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/enviar-registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/enviar-registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/img/signup-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/enviar-registro.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/enviar-registro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/teste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/mural.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/mural.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/notificacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/notificacoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plugins/cordova-plugin-firebase/www/firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/po.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/FirebasePlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/FirebasePluginInstanceIDService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/FirebasePluginMessageReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/FirebasePluginMessageReceiverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/FirebasePluginMessagingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/java/org/apache/cordova/firebase/OnNotificationOpenReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/values/cordova-plugin-firebase-strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/cordova-plugin-firebase/hellocordova-build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/plugins/cordova-plugin-firebase/www/firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/bump-version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/docs/API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/docs/GOOGLE_TAG_MANAGER.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/docs/NOTIFICATIONS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/after_prepare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/android/after_plugin_install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/android/before_plugin_uninstall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/android/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/ios/after_plugin_install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/ios/before_plugin_uninstall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/ios/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/scripts/lib/utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/FirebasePlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/FirebasePluginInstanceIDService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/FirebasePluginMessageReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/FirebasePluginMessageReceiverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/FirebasePluginMessagingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/OnNotificationOpenReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/build-extras.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/cordova-plugin-firebase-strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/AppDelegate+FirebasePlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/AppDelegate+FirebasePlugin.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Crashlytics" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/ANSCompatibility.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/Answers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/CLSAttributes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/CLSLogging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/CLSReport.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/CLSStackFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Headers/Crashlytics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/submit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Crashlytics.framework/uploadDSYM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/Fabric" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/Headers/FABAttributes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/Headers/Fabric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Crashlytics/Fabric.framework/uploadDSYM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/FirebaseAnalytics" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FIRAnalytics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FIREventNames.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FIRParameterNames.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseAnalytics.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/FirebaseCore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FIRApp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FIRConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FIRLoggerLevel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FIROptions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Headers/FirebaseCore.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCore.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseInstanceID.framework/FirebaseInstanceID" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseInstanceID.framework/Headers/FIRInstanceID.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/FirebaseInstanceID.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleAppMeasurement.framework/GoogleAppMeasurement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleAppMeasurement.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleUtilities.framework/Headers/GULLoggerCodes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleUtilities.framework/Headers/GULLoggerLevel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleUtilities.framework/Headers/GULNSData+zlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/GoogleUtilities.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/MeasurementNanoPB.framework/MeasurementNanoPB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/Headers/pb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/Headers/pb_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/Headers/pb_decode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/Headers/pb_encode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Analytics/nanopb.framework/nanopb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/FirebaseAuth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuth.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthCredential.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthErrors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthSettings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIROAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRUser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRUserInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FIRUserMetadata.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FirebaseAuth.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/FirebaseAuth.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/GTMSessionFetcher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMGatherInputStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMMIMEDocument.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMReadMonitorInputStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMSessionFetcher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMSessionFetcherLogging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMSessionFetcherService.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Headers/GTMSessionUploadFetcher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Auth/GTMSessionFetcher.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Firebase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Messaging/FirebaseMessaging.framework/FirebaseMessaging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Messaging/FirebaseMessaging.framework/Headers/FIRMessaging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Messaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Messaging/FirebaseMessaging.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/FirebasePerformance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Headers/FIRHTTPMetric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Headers/FIRPerformance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Headers/FIRPerformanceAttributable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Headers/FIRTrace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Headers/FirebasePerformance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/FirebasePerformance.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/GoogleToolboxForMac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMDebugSelectorValidation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMDebugThreadValidation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMDefines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMLocalizedString.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMLogger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMMethodCheck.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMNSData+zlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMNSDictionary+URLArguments.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMNSString+URLArguments.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMStringEncoding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMTypeCasting.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Headers/GTMURLBuilder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/Performance/GoogleToolboxForMac.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework/FirebaseABTesting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework/Headers/FIRExperimentController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework/Headers/FIRLifecycleEvents.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework/Headers/FirebaseABTesting.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework/FirebaseRemoteConfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Any.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Api.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Duration.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Empty.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/FieldMask.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBArray_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBBootstrap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBCodedInputStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBCodedInputStream_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBCodedOutputStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBCodedOutputStream_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBDescriptor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBDescriptor_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBDictionary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBDictionary_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBExtensionInternals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBExtensionRegistry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBMessage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBMessage_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBProtocolBuffers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBProtocolBuffers_RuntimeSupport.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBRootObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBRootObject_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBRuntimeTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUnknownField.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUnknownFieldSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUnknownFieldSet_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUnknownField_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUtilities.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBUtilities_PackagePrivate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBWellKnownTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/GPBWireFormat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/SourceContext.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Struct.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Timestamp.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Type.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Headers/Wrappers.pbobjc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/RemoteConfig/Protobuf.framework/Protobuf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/Firebase/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/FirebasePlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/FirebasePlugin.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/ios/GoogleService-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/www/firebase-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-firebase/www/firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/fetch.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fetch.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/tcc-app-2020.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tcc-app-2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcc-app-2020" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="388d3b71-c754-45a8-9cb6-8a9d0c8ef1d8" name="Default Changelist" comment="" />
+      <created>1582736291822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582736291822</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3296131" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" weight="0.3296131" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

@@ -4,73 +4,89 @@
   </head>
 
   <body class="enviar-registro-page container">
-    <div class="header">
-      <a href="mural.html" class="btn-back">⟵</a>
-      <h1 class="page-title">Selecione um tema</h1>
-      <h2 class="page-title">Envie uma mídia</h2>
-    </div>
 
-    <form class="tema-form">
-        <div class="input-group mb-3">
-            <h3>Tema</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="temas">
-                  <option selected>#tema</option>
-                  <option value="#de-onde-viemos">#de-onde-viemos</option>
-                  <option value="#cidade-de-sao-paulo">#cidade-de-sao-paulo</option>
-                </select>
-            </div>
+    <form id="regForm" class="tema-form">
+      
+      <div class="tab">
+        <div class="header">
+          <a href="mural.html" class="btn-back">⟵</a>
+          <h1 class="page-title">Selecione um tema</h1>
         </div>
-        <div class="input-group mb-3">
-            <h3>Série</h3>
-            <input type="text" class="form-control" name="serie" placeholder="#8-serie" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
+        <div class="input-group text-field mb-4">
+          <h2 class="label-field">Tema</h2>
+          <select class="form-control" id="temas">
+            <option selected>#tema</option>
+            <option value="#de-onde-viemos">#de-onde-viemos</option>
+            <option value="#cidade-de-sao-paulo">#cidade-de-sao-paulo</option>
+          </select>
         </div>
-        <div class="input-group mb-3">
-            <h3>Escola</h3>
-            <input type="text" class="form-control" name="escola" placeholder="#Anhembi-Morumbi" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
+        <div class="input-group text-field mb-4">
+          <h2 class="label-field">Série</h2>
+          <input type="text" class="form-control readonly-input" name="serie" value="#8-serie" placeholder="#8-serie" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
         </div>
-        <div class="input-group mb-3">
-            <h3>Fonte</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="fonte-field">
-                  <option selected>Coloque o link para indicar a fonte</option>
-                </select>
-            </div>
+        <div class="input-group text-field mb-4">
+          <h2 class="label-field">Escola</h2>
+          <input type="text" class="form-control readonly-input" name="escola" value="#anhembi-morumbi" placeholder="#anhembi-morumbi" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
+        </div>
+        <div class="input-group text-field mb-4">
+          <h2 class="label-field">Fonte</h2>
+          <select class="form-control" id="fonte-field">
+            <option selected>Coloque o link para indicar a fonte</option>
+            <option>A foto registrada em 2002 mostra o momento que é assinado o documento</option>
+          </select>
         </div>     
-        <div class="input-group mb-3">
-            <h3>Resumo</h3>
-            <input type="textarea" class="form-control" name="resumo" placeholder="Digite seu resumo" aria-label="Resumo do registro" aria-describedby="Resumo do registro">
+        <div class="input-group text-field textarea-field mb-4">
+          <h2 class="label-field">Resumo</h2>
+          <textarea type="textarea" class="form-control" name="resumo" placeholder="Digite seu resumo" aria-label="Resumo do registro" aria-describedby="Resumo do registro"></textarea>
         </div>
-        <button type="submit" class="btn-confirm">➝</button>
-    </form>
-
-    <form class="arquivo-form">
-        <div class="input-group mb-3">
-          <h2>Formato do arquivo</h2>
+      </div>
+    
+      <div class="tab">
+        <div class="header">
+          <a href="mural.html" class="btn-back">⟵</a>
+          <h2 class="page-title">Envie uma mídia</h2>
+        </div>
+        <div class="input-group format-field mb-4">
           <button type="submit" class="btn-icon">
-                <img class="icon" src="img/formato-texto.svg" alt="Ícone para envio de texto">
+           <img class="icon" src="img/formato-texto.svg" alt="Ícone para envio de texto">
+           <p class="label-field">Texto</p>
           </button>
           <button type="submit" class="btn-icon">
             <img class="icon" src="img/formato-audio.svg" alt="Ícone para envio de audio">
+            <p class="label-field">Áudio</p>
           </button>
           <button type="submit" class="btn-icon">
             <img class="icon" src="img/formato-imagem.svg" alt="Ícone para envio de imagem">
+            <p class="label-field">Imagem</p>
           </button>
           <button type="submit" class="btn-icon">
             <img class="icon" src="img/formato-video.svg" alt="Ícone para envio de video">
+            <p class="label-field">Vídeo</p>
           </button>
           <button type="submit" class="btn-icon">
             <img class="icon" src="img/formato-camera.svg" alt="Ícone para envio de imagem">
+            <p class="label-field">Camera</p>
           </button>
           <button type="submit" class="btn-icon">
             <img class="icon" src="img/formato-documento.svg" alt="Ícone para envio de documento">
+            <p class="label-field">Documento</p>
           </button>
-        </div>      
+        </div>
+      </div> 
+      
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" class="btn-circle btn-confirm" onclick="nextPrev(-1)">⟵</button>
+          <button type="button" id="nextBtn" class="btn-circle btn-confirm" onclick="nextPrev(1)">➝</button>
+        </div>
+      </div>
         
-        <button type="submit" class="btn-confirm">➝</button>
     </form>
   </body>
 
   <script src="components/metascripts.js"></script>
+  <script type="text/javascript" src="js/enviar-registro.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <script> makeHead('Login'); </script>
 </html>
