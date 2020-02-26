@@ -1,5 +1,3 @@
-// window.$ = window.jQuery = require('jquery');
-
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -38,3 +36,24 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+/* Tabs */
+$(document).ready(function() {
+    $("#cadastro").on("click", function() {
+        $(".slide-tab").toggleClass("active");
+        $("#slide-cadastro").toggleClass("active");
+        $("#slide-login").toggleClass("active");
+    });
+
+    $("#login").on("click", function() {
+        $(".slide-tab").toggleClass("active");
+        $("#slide-cadastro").toggleClass("active");
+        $("#slide-login").toggleClass("active");
+    });
+
+    $(".login-tab").on("click", function() {
+        $(".slide-tab").toggleClass("active");
+        $("#slide-cadastro").toggleClass("active");
+        $("#slide-login").toggleClass("active");
+    });
+});
