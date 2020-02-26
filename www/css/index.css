@@ -134,7 +134,8 @@ select.custom-select option {
 /* Bottom menu */
 .menu-bar {
     position: fixed;
-    top: calc(100% - 60px);
+    padding: 10px 0;
+    top: calc(100% - 80px);
     box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.35);
     left: 0;
     min-width: 100vw;
@@ -144,6 +145,15 @@ select.custom-select option {
 
 .menu-bar .page-link {
     border: 0;
+}
+
+.menu-bar > .page-link {
+    width: 20%;
+    text-align: center;
+}
+
+.menu-bar > .page-link:last-of-type {
+    padding: .5rem 0;
 }
 
 .menu-bar .page-link .nav-link {
@@ -166,6 +176,7 @@ select.custom-select option {
 .menu-bar .add-post {
     background-color: #E83F3C;
     border-radius: 50em;
+    max-width: 60px;
 }
 
 .menu-bar .add-post:hover {
@@ -190,4 +201,38 @@ select.custom-select option {
 
 .menu-bar .nav-link.active * {
     background-color: #E83F3C;   
+}
+
+/* Toggle menu */
+.toggle-nav {
+    opacity: 0;
+    overflow:hidden;
+    transition:flex 0.3s ease-out; /* note that we're transitioning flex, not height! */
+    height:auto;
+    flex: 0;
+    position: absolute;
+    bottom: 100%;
+    width: 100vw;
+    padding: 10px 0;
+    background-color:#E83F3C;
+    border-radius: 24px 24px 0 0;
+}
+
+.toggle-nav .page-link {
+    width: 50%;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.toggle-nav .page-link:first-of-type {
+    border-right: 1px solid #ffffff;
+}
+
+.toggle-nav .page-link .nav-link {
+    color: #ffffff;
+}
+
+.toggle-up {
+    opacity: 1;
+    flex: 1;
 }

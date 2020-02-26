@@ -75,6 +75,11 @@ function makeHead(title, exceptionsCSS, exceptionsJS){
             integrity:"none",
             crossorgin:"none"
         },
+        {
+            src:'js/toggle-menu.js',
+            integrity:"none",
+            crossorgin:"none"
+        },
     );
 
     if(exceptionsJS !== undefined){
