@@ -1,0 +1,47 @@
+/* Página Notificações */
+
+/* Top bar */
+.turmas-page .page-title {
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* Wrapper */
+.turmas-page .wrapper {
+    margin-top: 82px;
+}
+
+.turmas-list .list-group-item {
+    display: grid;
+    grid-gap: 5px 10px;
+}
+
+.turmas-list .list-group-item .config-turma:hover {
+    text-decoration: none;
+}
+
+.turmas-list .list-group-item .icon {
+    max-width: 50px;
+}
+
+.turmas-list .name {
+    font-size: 20px;
+    grid-column: 2;
+    font-weight: 700;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.turma-list .name span {
+    font-weight: 400;
+}
+
+.turmas-list .notificacao-extra {
+    grid-column: 2;
+    font-weight: 700;
+}
+
+.turmas-list .notificacao-extra span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
