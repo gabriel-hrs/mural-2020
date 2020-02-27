@@ -143,6 +143,16 @@ select.custom-select option {
     background: #ffffff;
 }
 
+.menu-bar:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+}
+
 .menu-bar .page-link {
     border: 0;
 }
@@ -205,13 +215,10 @@ select.custom-select option {
 
 /* Toggle menu */
 .toggle-nav {
-    opacity: 0;
-    overflow:hidden;
-    transition:flex 0.3s ease-out; /* note that we're transitioning flex, not height! */
-    height:auto;
-    flex: 0;
+    height: auto;
+    z-index: -1;
     position: absolute;
-    bottom: 100%;
+    transition: all .5s ease;
     width: 100vw;
     padding: 10px 0;
     background-color:#E83F3C;
@@ -233,6 +240,5 @@ select.custom-select option {
 }
 
 .toggle-up {
-    opacity: 1;
-    flex: 1;
+    transform: translateY(-100%);
 }
