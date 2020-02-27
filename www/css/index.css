@@ -236,6 +236,11 @@ select.custom-select option {
     border-right: 1px solid #ffffff;
 }
 
+
+.toggle-nav .page-link:hover {
+    background-color: transparent;
+}
+
 .toggle-nav .page-link .nav-link {
     color: #ffffff;
 }
