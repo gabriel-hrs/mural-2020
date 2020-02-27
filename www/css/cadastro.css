@@ -38,7 +38,7 @@
     padding: 50px;
 }
 
-.btn-circle{
+.signin-page form .input-group .btn-circle {
     background-image: url('../img/perfil.png');
     background-size: cover;
     background-position: center top;

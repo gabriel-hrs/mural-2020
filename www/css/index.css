@@ -142,6 +142,7 @@ select.custom-select option {
     min-width: 100vw;
     justify-content: space-between;
     background: #ffffff;
+    z-index: 1;
 }
 
 .menu-bar:before {
