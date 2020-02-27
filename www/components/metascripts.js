@@ -52,6 +52,11 @@ function makeHead(title, exceptionsCSS, exceptionsJS){
             crossorgin:"none"
         },
         {
+            src:'https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js',
+            integrity:"none",
+            crossorgin:"none"
+        },
+        {
             src:'js/db.js',
             integrity:"none",
             crossorgin:"none"

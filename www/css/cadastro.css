@@ -33,10 +33,15 @@
 
 .signin-page form .input-group .custom-file {
     position: relative;
-    max-width: 45px;
-    min-height: 45px;
+    max-width: 128px;
+    min-height: 128px;
     padding: 50px;
+}
+
+.btn-circle{
+    background-image: url('../img/perfil.png');
     background-size: cover;
+    background-position: center top;
 }
 
 .signin-page form .input-group .icon {
