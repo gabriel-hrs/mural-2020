@@ -1,13 +1,27 @@
 $(document).ready(function() {
-
   // =========== CAMPOS =====================
-  var userPhoto = $("#photo")
+  var userPhoto = $("#photo");
   var userName = $("#user");
   var userEmail = $("#email");
   var userState = $("#states");
   var userCity = $("#user-city");
   var userPassword = $('#user-password');
   var userConfrimPassword = $('#user-confirm-password');
+
+  userPhoto.on('change',function(e){
+
+    let file = e.target.files[0];
+
+    let reader = new FileReader();
+    reader.onload = function (element) {
+      $('.btn-circle').css({'background-image':`url('${element.target.result}')`});
+    };
+    
+    reader.readAsDataURL(file);
+
+  });
+
+  $('.page-title').text(`Cadastro ${localStorage.getItem("userType")}`);
 
   $(".btn-confirm").on("click", function(event) {
 

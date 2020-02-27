@@ -36,6 +36,7 @@
     max-width: 45px;
     min-height: 45px;
     padding: 50px;
+    background-size: cover;
 }
 
 .signin-page form .input-group .icon {
