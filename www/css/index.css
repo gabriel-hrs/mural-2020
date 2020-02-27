@@ -92,7 +92,7 @@ select.custom-select option {
     max-height: 50px;
     width: 50px;
     border-radius: 50em;
-    background-color:#606060;
+    /* background-color:#606060; */
     text-align: center;
     padding: 10px;
 }
