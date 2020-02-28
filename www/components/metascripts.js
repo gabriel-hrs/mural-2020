@@ -92,9 +92,13 @@ function makeHead(title, exceptionsCSS, exceptionsJS){
             integrity:"none",
             crossorgin:"none"
         },
-        
         {
             src:'js/turma.js',
+            integrity:"none",
+            crossorgin:"none"
+        },
+        {
+            src:'js/mural.js',
             integrity:"none",
             crossorgin:"none"
         },

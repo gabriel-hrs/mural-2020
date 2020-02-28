@@ -18,7 +18,6 @@ $(document).ready(function() {
     let reader = new FileReader();
     reader.onload = function (element) {
       $('.btn-circle').css({'background-image':`url('${element.target.result}')`});
-
     };
     
     reader.readAsDataURL(file);
@@ -27,7 +26,6 @@ $(document).ready(function() {
     imageName = file.name;
 
   });
-
   
 
   $('.page-title').text(`Cadastro ${localStorage.getItem("userType")}`);
@@ -47,6 +45,7 @@ $(document).ready(function() {
           userState.val(), 
           userCity.val(),
           localStorage.getItem("userType"),
+          userPhoto.val(),
         );
 
         let setStorage = firebase.storage().ref(`${firebase.auth().currentUser.uid}/${imageName}`).put(image);
@@ -60,7 +59,8 @@ $(document).ready(function() {
           console.log(err);
         },
         function complete(){ 
-          console.log('Upload realizado com sucesso!') 
+          console.log('Upload realizado com sucesso!');
+          window.location.assign("mural.html");
         });
   
       }).catch(function(error) {
@@ -78,13 +78,14 @@ $(document).ready(function() {
 
   });
 
-  function create(id, nome, estado, cidade, tipo) {
+  function create(id, nome, estado, cidade, tipo, imagem_perfil) {
     let data = {
       id: id,
       nome: nome,
       estado: estado,
       cidade: cidade,
-      tipo: tipo
+      tipo: tipo,
+      imagem_perfil: imagem_perfil
     };
     return firebase
       .database()
