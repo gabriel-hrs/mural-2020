@@ -1,119 +1,89 @@
 $(document).ready(function() {
-  // =========== CAMPOS =====================
-  var userPhoto = $("#photo");
-  var userName = $("#user");
-  var userEmail = $("#email");
-  var userState = $("#states");
-  var userCity = $("#user-city");
-  var userPassword = $('#user-password');
-  var userConfrimPassword = $('#user-confirm-password');
+  
+  /* Função de Cadastro */
+  var uid = firebase.auth().currentUser.uid;
 
-  var image = "";
-  var imageName = "";
+  var userPhoto = $( '#photo' );
+  var userName = $( '#user' );
+  var userEmail = $( '#email' );
+  var userState = $( '#states' );
+  var userCity = $( '#user-city' );
+  var userPassword = $( '#user-password' );
+  var userConfirmPassword = $( '#user-confirm-password' );
 
-  userPhoto.on('change',function(e){
+  var image = '';
+  var imageName = '';
 
+  userPhoto.on( 'change', function( e ){
     let file = e.target.files[0];
-
     let reader = new FileReader();
-    reader.onload = function (element) {
-      $('.btn-circle').css({'background-image':`url('${element.target.result}')`});
+
+    reader.onload = function ( element ) {
+      $( '.btn-circle' ).css({ 'background-image':`url('${element.target.result}')` });
     };
     
-    reader.readAsDataURL(file);
-
+    reader.readAsDataURL( file );
     image = file;
     imageName = file.name;
-
   });
-  
 
-  $('.page-title').text(`Cadastro ${localStorage.getItem("userType")}`);
+  $( '.page-title' ).text( `Cadastro ${localStorage.getItem( 'userType' )}` ); // Exibir do LocalStorage o tipo de usuário no título da página
 
-  $(".btn-confirm").on("click", function(event) {
-
+  $( '.btn-confirm' ).on( 'click', function( event ) {
     event.preventDefault();
 
-    if(userPassword.val() == userConfrimPassword.val()){
-      
-      firebase.auth().createUserWithEmailAndPassword(userEmail.val(), userPassword.val())
-      .then(function(sucess){
-  
+    if( userPassword.val() == userConfirmPassword.val() ){
+      firebase.auth().createUserWithEmailAndPassword( userEmail.val(), userPassword.val() )
+      .then( function( sucess ){
         create(
           firebase.auth().currentUser.uid,
-          userName.val(), 
+          userName.val(),
+          userEmail.val(), 
           userState.val(), 
           userCity.val(),
-          localStorage.getItem("userType"),
+          localStorage.getItem('userType'),
           userPhoto.val(),
         );
 
-        let setStorage = firebase.storage().ref(`${firebase.auth().currentUser.uid}/${imageName}`).put(image);
+        let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
 
-        setStorage.on('state_changed',
-        function ProgressEvent(snapshot){
-          var percentagem = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`${percentagem}%`);
-        },
-        function error(err){
-          console.log(err);
-        },
-        function complete(){ 
-          console.log('Upload realizado com sucesso!');
-          window.location.assign("mural.html");
-        });
-  
-      }).catch(function(error) {
-        
+        setStorage.on( 'state_changed',
+          function ProgressEvent( snapshot ) {
+            var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
+            alert(`${porcentagem}%`);
+          },
+          function error( error ) {
+          alert( error );
+          },
+          function complete() { 
+            alert( 'Upload realizado com sucesso!' );
+            window.location.assign( 'mural.html' );
+          });
+        }).catch( function( error ) {
         var errorCode = error.code;
         var errorMessage = error.message;
-
-        console.log(errorMessage);
-        
+        alert(errorMessage);
       });
 
-    } else{
-      console.log("Senhas diferentes!");
+    } else {
+      console.log( 'Senhas diferentes!' );
     }
-
   });
 
-  function create(id, nome, estado, cidade, tipo, imagem_perfil) {
+  function create( uid, nome, email, estado, cidade, tipo, foto ) {
     let data = {
-      id: id,
+      uid: uid,
       nome: nome,
+      email: email,
       estado: estado,
       cidade: cidade,
       tipo: tipo,
-      imagem_perfil: imagem_perfil
+      foto: foto
     };
     return firebase
       .database()
       .ref()
-      .child("Usuarios/"+firebase.auth().currentUser.uid)
-      .set(data);
+      .child( 'Usuarios/' + uid )
+      .set( data );
   }
-
 });
-
-//   firebase
-//     .database()
-//     .ref("Usuarios")
-//     .on("value", function(snapshot) {
-//       $(".userList").html("");
-
-//       var lista = "<tr>";
-//       lista += "<th> Nome </th>";
-//       lista += "<th> Senha </th>";
-//       lista += "</tr>";
-
-//       snapshot.forEach(function(item) {
-//         lista += "<tr>";
-//         lista += "<td>" + item.val().nome + "</td>";
-//         lista += "<td>" + item.val().senha + "</td>";
-//         lista += "</tr>";
-//       });
-
-//       $(".userList").html(lista);
-//     });
-// 
