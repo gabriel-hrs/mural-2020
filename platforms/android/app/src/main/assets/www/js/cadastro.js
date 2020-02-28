@@ -1,13 +1,35 @@
 $(document).ready(function() {
-
   // =========== CAMPOS =====================
-  var userPhoto = $("#photo")
+  var userPhoto = $("#photo");
   var userName = $("#user");
   var userEmail = $("#email");
   var userState = $("#states");
   var userCity = $("#user-city");
   var userPassword = $('#user-password');
   var userConfrimPassword = $('#user-confirm-password');
+
+  var image = "";
+  var imageName = "";
+
+  userPhoto.on('change',function(e){
+
+    let file = e.target.files[0];
+
+    let reader = new FileReader();
+    reader.onload = function (element) {
+      $('.btn-circle').css({'background-image':`url('${element.target.result}')`});
+
+    };
+    
+    reader.readAsDataURL(file);
+
+    image = file;
+    imageName = file.name;
+
+  });
+  
+
+  $('.page-title').text(`Cadastro ${localStorage.getItem("userType")}`);
 
   $(".btn-confirm").on("click", function(event) {
 
@@ -19,11 +41,27 @@ $(document).ready(function() {
       .then(function(sucess){
   
         create(
-          userPhoto.val(),
+          firebase.auth().currentUser.uid,
           userName.val(), 
           userState.val(), 
-          userCity.val()
+          userCity.val(),
+          localStorage.getItem("userType"),
         );
+
+        let setStorage = firebase.storage().ref(`${firebase.auth().currentUser.uid}/${imageName}`).put(image);
+
+        setStorage.on('state_changed',
+        function ProgressEvent(snapshot){
+          var percentagem = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log(`${percentagem}%`);
+        },
+        function error(err){
+          console.log(err);
+        },
+        function complete(){ 
+          console.log('Upload realizado com sucesso!');
+          window.location.assign("mural.html");
+        });
   
       }).catch(function(error) {
         
@@ -40,18 +78,19 @@ $(document).ready(function() {
 
   });
 
-  function create(foto, nome, estado, cidade) {
+  function create(id, nome, estado, cidade, tipo) {
     let data = {
-      foto: foto,
+      id: id,
       nome: nome,
       estado: estado,
-      cidade: cidade
+      cidade: cidade,
+      tipo: tipo
     };
     return firebase
       .database()
       .ref()
-      .child("Usuarios")
-      .push(data);
+      .child("Usuarios/"+firebase.auth().currentUser.uid)
+      .set(data);
   }
 
 });

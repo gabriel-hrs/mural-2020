@@ -81,7 +81,7 @@ select.custom-select option {
     max-height: 50px;
     max-width: 50px;
     border-radius: 50em;
-    background-color:#606060;
+    /* background-color:#606060; */
 }
 
 .wrapper {
@@ -92,14 +92,14 @@ select.custom-select option {
     max-height: 50px;
     width: 50px;
     border-radius: 50em;
-    background-color:#606060;
+    /* background-color:#606060; */
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
-
+/* 
 .perfil.btn-circle .icon {
     max-height: 30px;
-}
+} */
 
 /* Top menu */
 .top-bar {
@@ -115,8 +115,9 @@ select.custom-select option {
     max-height: 50px;
     max-width: 50px;
     border-radius: 50em;
-    background-color:#606060;
+    /* background-color:#606060; */
     margin: 0 auto;
+    padding: 0;
 }
 
 .top-bar .page-link .btn-circle {
@@ -124,7 +125,7 @@ select.custom-select option {
 }
 
 .top-bar .page-link .btn-circle .icon {
-    max-height: 30px;
+    max-height: 50px;
 }
 
 .nav-up {
@@ -141,6 +142,17 @@ select.custom-select option {
     min-width: 100vw;
     justify-content: space-between;
     background: #ffffff;
+    z-index: 1;
+}
+
+.menu-bar:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
 }
 
 .menu-bar .page-link {
@@ -205,13 +217,10 @@ select.custom-select option {
 
 /* Toggle menu */
 .toggle-nav {
-    opacity: 0;
-    overflow:hidden;
-    transition:flex 0.3s ease-out; /* note that we're transitioning flex, not height! */
-    height:auto;
-    flex: 0;
+    height: auto;
+    z-index: -1;
     position: absolute;
-    bottom: 100%;
+    transition: all .5s ease;
     width: 100vw;
     padding: 10px 0;
     background-color:#E83F3C;
@@ -228,11 +237,15 @@ select.custom-select option {
     border-right: 1px solid #ffffff;
 }
 
+
+.toggle-nav .page-link:hover {
+    background-color: transparent;
+}
+
 .toggle-nav .page-link .nav-link {
     color: #ffffff;
 }
 
 .toggle-up {
-    opacity: 1;
-    flex: 1;
+    transform: translateY(-100%);
 }
