@@ -2,18 +2,20 @@
 
 Observação:
 Deve ser carregado em toda página que exibir dados do usuário. */
-firebase.auth().onAuthStateChanged( function( user ) {
+var dadosUsuario = firebase.auth().onAuthStateChanged( function( user ) {
     if ( user ) {
         var uid = user.uid;
         var nome = user.nome;
         var email = user.email;
         var foto = user.foto;
         var tipo = user.tipo;
-        var uid = user.uid;
         var estado = user.estado;
         var cidade = user.cidade;
     } else {
-        alert( 'Faça o login' );
-        window.location.assign( 'index.html' );
+        alert( "Faça o login" );
+        window.location.assign( "index.html" );
     }
 });
+
+export { dadosUsuario };
+console.log( dadosUsuario );
