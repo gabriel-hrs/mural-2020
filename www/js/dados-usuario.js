@@ -2,7 +2,7 @@
 
 Observação:
 Deve ser carregado em toda página que exibir dados do usuário. */
-var dadosUsuario = firebase.auth().onAuthStateChanged( function( user ) {
+firebase.auth().onAuthStateChanged( function( user ) {
     if ( user ) {
         var uid = user.uid;
         var nome = user.nome;
@@ -16,6 +16,3 @@ var dadosUsuario = firebase.auth().onAuthStateChanged( function( user ) {
         window.location.assign( "index.html" );
     }
 });
-
-export { dadosUsuario };
-console.log( dadosUsuario );

@@ -41,8 +41,11 @@ $(document).ready(function() {
           userEmail.val(), 
           userState.val(), 
           userCity.val(),
-          localStorage.getItem("userType"),
-          imageName,
+          localStorage.getItem("userType")
+        );
+
+        createImagesPerfil(
+          imageName
         );
 
         let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
@@ -70,20 +73,30 @@ $(document).ready(function() {
     }
   });
 
-  function create( uid, nome, email, estado, cidade, tipo, foto ) {
+  function create( uid, nome, email, estado, cidade, tipo ) {
     let data = {
       uid: uid,
       nome: nome,
       email: email,
       estado: estado,
       cidade: cidade,
-      tipo: tipo,
-      foto: foto
+      tipo: tipo
     };
     return firebase
       .database()
       .ref()
       .child( "Usuarios/" + firebase.auth().currentUser.uid )
+      .set( data );
+  }
+
+  function createImagesPerfil( foto_perfil ){
+    let data = {
+      foto_perfil: foto_perfil
+    };
+    return firebase
+      .database()
+      .ref()
+      .child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Perfil" )
       .set( data );
   }
 });
