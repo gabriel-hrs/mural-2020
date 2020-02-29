@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $("#btn-toggle").on("click", function() {
-        $(".toggle-nav").toggleClass("toggle-up");
+
+    /* Botão + Toggle do Menu inferior */
+    $( "#btn-toggle" ).on( "click", function() {
+        $( ".toggle-nav" ).toggleClass( "toggle-up" );
     });
 });

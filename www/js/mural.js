@@ -1,4 +1,22 @@
+function myFunction() {
+    var btn = document.body.getElementByClass("toggle-nav");
+    if ( btn.classList.contains("toggle-down") ) {
+        btn.classList.add("toggle-up");
+        btn.classList.remove("toggle-down");
+    } else {
+        btn.classList.add("toggle-down");
+        btn.classList.remove("toggle-up");
+    }
+}
+
 $(document).ready(function() {
+    // $( "#btn-toggle" ).on( "click", function() {
+    //     $( ".toggle-nav" ).toggleClass( "toggle-up" );
+    //     $( ".toggle-nav" ).toggleClass( "toggle-down" );
+    // });
+    // $( "#btn-toggle" ).on( "click", function() {
+    //     $( ".toggle-nav" ).removeClass( "toggle-up" );
+    // });
 
     /* Coletar dados do usuário. */
     firebase.auth().onAuthStateChanged( function( user ) {
@@ -23,20 +41,6 @@ $(document).ready(function() {
                     $( "#top-bar .icon" ).attr( "src", downloadUrl );
                 });
             });
-        } else {
-            alert( "Faça o login" );
-            window.location.replace( "index.html" );
         }
     });   
-
-    /* LOGOUT */
-    $( "#logout" ).on( "click" , function( event ) {
-        event.preventDefault();
-
-        firebase.auth().signOut().then( function() {
-            window.location.assign( "index.html" );
-        }).catch( function( error ) {
-            alert( error );
-        });
-    });
 });

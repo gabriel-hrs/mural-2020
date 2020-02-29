@@ -5,66 +5,98 @@
 
   <body class="perfil-page container">
     <div class="header">
-      <a href="index.html" class="btn-back">⟵</a>
+      <a href="mural.html" class="btn-back">⟵</a>
       <h1 class="page-title">Editar perfil</h1>
     </div>
+
+    <div class="userList" style="color: white;"></div>
+
     <form>
       <div class="input-group mb-3">
         <div class="custom-file btn-circle perfil">
-          <img class="icon" src="img/perfil.png" alt="Imagem padrão de perfil">
-          <input type="file" class="custom-file-input" id="inputGroupFile01">
+          <img class="icon btn-circle" src="img/perfil.png" alt="Imagem padrão de perfil">
+          <input type="file" class="custom-file-input" id="foto">
         </div>
       </div>
       <div class="input-group mb-3">
-        <input type="text" class="form-control" name="nome" value="Diego Alves da Silva" placeholder="Nome do aluno" id="user" aria-label="Nome completo" aria-describedby="Nome da pessoa">
+        <input type="text" class="form-control nome" name="nome" placeholder="Nome do aluno" id="user" aria-label="Nome completo" aria-describedby="Nome da pessoa">
       </div>
       <div class="input-group mb-3">
-        <input type="email" class="form-control" name="email" value="diego.alves@gmail.com" placeholder="Digite uma conta de e-mail" id="email" aria-label="email" aria-describedby="email pessoal">
+        <input type="email" class="form-control email" name="email" placeholder="Digite uma conta de e-mail" id="email" aria-label="email" aria-describedby="email pessoal">
       </div>
       <div class="input-group mb-3">
         <select class="custom-select" id="states">
-          <option>Estado</option>
-          <option value="AC">AC</option>
-          <option value="AL">AL</option>
-          <option value="AP">AP</option>
-          <option value="AM">AM</option>
-          <option value="BA">BA</option>
-          <option value="CE">CE</option>
-          <option value="DF">DF</option>
-          <option value="ES">ES</option>
-          <option value="GO">GO</option>
-          <option value="MA">MA</option>
-          <option value="MT">MT</option>
-          <option value="MS">MS</option>
-          <option value="MG">MG</option>
-          <option value="PA">PA</option>
-          <option value="PB">PB</option>
-          <option value="PR">PR</option>
-          <option value="PE">PE</option>
-          <option value="PI">PI</option>
-          <option value="RJ">RJ</option>
-          <option value="RN">RN</option>
-          <option value="RS">RS</option>
-          <option value="RO">RO</option>
-          <option value="RR">RR</option>
-          <option value="SC">SC</option>
-          <option selected value="SP">SP</option>
-          <option value="SE">SE</option>
-          <option value="TO">TO</option>
+          <option selected>Estado</option>
+          <option class="estado" value="AC">AC</option>
+          <option class="estado" value="AL">AL</option>
+          <option class="estado" value="AP">AP</option>
+          <option class="estado" value="AM">AM</option>
+          <option class="estado" value="BA">BA</option>
+          <option class="estado" value="CE">CE</option>
+          <option class="estado" value="DF">DF</option>
+          <option class="estado" class="estado" value="ES">ES</option>
+          <option class="estado" value="GO">GO</option>
+          <option class="estado" value="MA">MA</option>
+          <option class="estado" value="MT">MT</option>
+          <option class="estado" value="MS">MS</option>
+          <option class="estado" value="MG">MG</option>
+          <option class="estado" value="PA">PA</option>
+          <option class="estado" value="PB">PB</option>
+          <option class="estado" value="PR">PR</option>
+          <option class="estado" value="PE">PE</option>
+          <option class="estado" value="PI">PI</option>
+          <option class="estado" value="RJ">RJ</option>
+          <option class="estado" value="RN">RN</option>
+          <option class="estado" value="RS">RS</option>
+          <option class="estado" value="RO">RO</option>
+          <option class="estado" value="RR">RR</option>
+          <option class="estado" value="SC">SC</option>
+          <option class="estado" value="SP">SP</option>
+          <option class="estado" value="SE">SE</option>
+          <option class="estado" value="TO">TO</option>
         </select>
 
-        <input type="text" class="form-control" name="cidade" value="São Paulo" placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
+        <input type="text" class="cidade form-control" name="cidade"  placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
       </div>
       <div class="input-group mb-3">
-        <input type="password" class="form-control" name="senha" value="1234" placeholder="Senha" id="user-password" aria-label="Senha" aria-describedby="Senha digitada">
+        <input type="password" class="senha form-control" name="senha" placeholder="Senha" id="user-password" aria-label="Senha" aria-describedby="Senha digitada">
       </div>
       <div class="input-group mb-3">
-        <input type="password" class="form-control" name="confirmarSenha" value="1234" placeholder="Confirmar Senha" id="user-confirm-password" aria-label="Confirmar senha" aria-describedby="Senha novamente">
+        <input type="password" class="senha form-control" name="confirmarSenha" placeholder="Confirmar Senha" id="user-confirm-password" aria-label="Confirmar senha" aria-describedby="Senha novamente">
       </div>
-      <input type="submit" value="Salvar" class="btn-orange btn-confirm" />
+      <div class="input-group mb-3">
+        <input type="submit" value="Salvar" class="btn-orange btn-confirm" />
+        <input type="submit" id="logout" value="Sair do app" class="btn-outline-orange" />
+      </div>
     </form>
   </body>
+ 
+  <!-- Vendors (externos) -->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  
+  <!-- Scripts (internos) -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/cadastro.js"></script> -->
+  <!-- <script type="text/javascript" src="js/config-tema.js"></script> -->
+  <script type="text/javascript" src="js/db.js"></script>
+  <!-- <script type="text/javascript" src="js/dados-usuario.js"></script> -->
+  <!-- <script type="text/javascript" src="js/enviar-registro.js"></script> -->
+  <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  <!-- <script type="text/javascript" src="js/login-token.js"></script> -->
+  <!-- <script type="text/javascript" src="js/mural.js"></script> -->
+  <script type="text/javascript" src="js/perfil.js"></script>
+  <!-- <script type="text/javascript" src="js/toggle-menu.js"></script> -->
+  <!-- <script type="text/javascript" src="js/turma.js"></script> -->
+  <!-- <script type="text/javascript" src="js/turmas.js"></script> -->
+
+  <!-- Carregar folhas de estilo (css) -->
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Perfil',undefined,undefined); </script>
+  <script> makeHead('Mural', undefined, undefined); </script>
 </html>

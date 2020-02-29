@@ -41,6 +41,7 @@
 .perfil-page form .input-group .icon {
     position: absolute;
     right: 39%;
+    max-width: 100%;
 }
 
 .perfil-page form .input-group .custom-file-input {

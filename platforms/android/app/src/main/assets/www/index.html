@@ -33,9 +33,9 @@
         <section id="slide-login" class="container wrapper">
           <div class="row">
             <div class="group-field col-md-9">
-              <input type="text" class="field-grey" placeholder="Usuário"></input>
-              <input type="password" class="field-grey" placeholder="Senha"></input>
-              <button type="submit" href="mural.html" class="btn-orange">Entrar</button>
+              <input type="text" id="email" class="field-grey" placeholder="Email"></input>
+              <input type="password" id="senha" class="field-grey" placeholder="Senha"></input>
+              <button type="submit" href="mural.html" class="btn-orange enter-login">Entrar</button>
             </div>
           </div>
         </section>
@@ -43,21 +43,32 @@
 
     </div>
   </body>
+
+  <!-- Vendors (externos) -->
   <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script type="text/javascript" src="js/db.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-  <script type="text/javascript" src="js/toggle-menu.js"></script>
-  <script type="text/javascript" src="js/turmas.js"></script>
-  <script type="text/javascript" src="js/turma.js"></script>
-  <script type="text/javascript" src="js/mural.js"></script>
+  
+  <!-- Scripts (internos) -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/login.js"></script>
+  <!-- <script type="text/javascript" src="js/cadastro.js"></script> -->
+  <!-- <script type="text/javascript" src="js/config-tema.js"></script> -->
+  <script type="text/javascript" src="js/db.js"></script>
+  <!-- <script type="text/javascript" src="js/enviar-registro.js.js"></script> -->
+  <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  <script type="text/javascript" src="js/login-token.js"></script>
+  <!-- <script type="text/javascript" src="js/mural.js"></script> -->
+  <!-- <script type="text/javascript" src="js/perfil.js"></script> -->
+  <!-- <script type="text/javascript" src="js/toggle-menu.js"></script> -->
+  <!-- <script type="text/javascript" src="js/turma.js"></script> -->
+  <!-- <scrit type="text/javascript" src="js/turmas.js"></script> -->
+
+  <!-- Carregar folhas de estilo (css) -->
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Login', undefined, ['js/insertToken.js']); </script>
+  <script> makeHead('Login', undefined, undefined); </script>
 </html>

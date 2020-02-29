@@ -77,6 +77,18 @@ select.custom-select option {
     text-transform: uppercase;
 }
 
+.btn-outline-orange {
+    background-color: white;
+    border: 2px solid #E83F3C;
+    border-radius: 5px;
+    color: #E83F3C;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 .default-photo {
     max-height: 50px;
     max-width: 50px;
@@ -248,4 +260,8 @@ select.custom-select option {
 
 .toggle-up {
     transform: translateY(-100%);
+}
+
+.toggle-down {
+    transform: (100%);
 }
