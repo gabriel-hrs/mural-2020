@@ -13,6 +13,14 @@ $(document).ready(function() {
                 snapshot.forEach( function( item ) {
                     var key = item.key;
                     $( `.${key}` ).val( item.val() );
+
+                    // if( key = 'estado' ) {
+                    //     $( `.${key}` ).val( item.val() );
+                    //     console.log(item.val());
+                    // }
+
+                    // var user = firebase.auth().currentUser;
+                    // $(".senha").val( user.getToken() );
                 });
             });
 
@@ -23,7 +31,7 @@ $(document).ready(function() {
                     }
                     return nome_foto;
                 });
-                storageRef.child( `${uid}/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
+                storageRef.child( `${uid}/Perfil/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
                     $( ".icon" ).attr( "src", downloadUrl );
                 });
             });
@@ -31,8 +39,8 @@ $(document).ready(function() {
     });
 
     /* LOGOUT */
-    $( "#logout" ).on( "click" , function( event ) {
-        event.preventDefault();
+    $( "#logout" ).on( "click" , function( logout ) {
+        logout.preventDefault();
 
         firebase.auth().signOut().then( function() {
             window.location.assign( "index.html" );

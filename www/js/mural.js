@@ -1,22 +1,4 @@
-function myFunction() {
-    var btn = document.body.getElementByClass("toggle-nav");
-    if ( btn.classList.contains("toggle-down") ) {
-        btn.classList.add("toggle-up");
-        btn.classList.remove("toggle-down");
-    } else {
-        btn.classList.add("toggle-down");
-        btn.classList.remove("toggle-up");
-    }
-}
-
 $(document).ready(function() {
-    // $( "#btn-toggle" ).on( "click", function() {
-    //     $( ".toggle-nav" ).toggleClass( "toggle-up" );
-    //     $( ".toggle-nav" ).toggleClass( "toggle-down" );
-    // });
-    // $( "#btn-toggle" ).on( "click", function() {
-    //     $( ".toggle-nav" ).removeClass( "toggle-up" );
-    // });
 
     /* Coletar dados do usuário. */
     firebase.auth().onAuthStateChanged( function( user ) {
@@ -37,7 +19,7 @@ $(document).ready(function() {
                     }
                     return nome_foto;
                 });
-                storageRef.child( `${uid}/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
+                storageRef.child( `${uid}/Perfil/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
                     $( "#top-bar .icon" ).attr( "src", downloadUrl );
                 });
             });

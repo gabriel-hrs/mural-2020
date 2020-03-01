@@ -35,7 +35,7 @@ $(document).ready(function() {
     if( userPassword.val() == userConfirmPassword.val() ){
       firebase.auth().createUserWithEmailAndPassword( userEmail.val(), userPassword.val() )
       .then( function( sucess ){
-        create(
+        createUser(
           firebase.auth().currentUser.uid,
           userName.val(),
           userEmail.val(), 
@@ -48,7 +48,7 @@ $(document).ready(function() {
           imageName
         );
 
-        let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
+        let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
 
         setStorage.on( "state_changed",
           function ProgressEvent( snapshot ) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
   });
 
-  function create( uid, nome, email, estado, cidade, tipo ) {
+  function createUser( uid, nome, email, estado, cidade, tipo ) {
     let data = {
       uid: uid,
       nome: nome,
@@ -83,10 +83,10 @@ $(document).ready(function() {
       tipo: tipo
     };
     return firebase
-      .database()
-      .ref()
-      .child( "Usuarios/" + firebase.auth().currentUser.uid )
-      .set( data );
+    .database()
+    .ref()
+    .child( "Usuarios/" + firebase.auth().currentUser.uid )
+    .set( data );
   }
 
   function createImagesPerfil( foto_perfil ){
@@ -94,9 +94,9 @@ $(document).ready(function() {
       foto_perfil: foto_perfil
     };
     return firebase
-      .database()
-      .ref()
-      .child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Perfil" )
-      .set( data );
+    .database()
+    .ref()
+    .child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Perfil" )
+    .set( data );
   }
 });
