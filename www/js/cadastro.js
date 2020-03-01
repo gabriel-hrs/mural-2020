@@ -35,39 +35,38 @@ $(document).ready(function() {
     if( userPassword.val() == userConfirmPassword.val() ){
       firebase.auth().createUserWithEmailAndPassword( userEmail.val(), userPassword.val() )
       .then( function( sucess ){
-        createUser(
-          firebase.auth().currentUser.uid,
-          userName.val(),
-          userEmail.val(), 
-          userState.val(), 
-          userCity.val(),
-          localStorage.getItem("userType")
-        );
+      createUser(
+        firebase.auth().currentUser.uid,
+        userName.val(),
+        userEmail.val(), 
+        userState.val(), 
+        userCity.val(),
+        localStorage.getItem("userType")
+      );
 
-        createImagesPerfil(
-          imageName
-        );
+      createImagesPerfil(
+        imageName
+      );
 
-        let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
+      let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
 
-        setStorage.on( "state_changed",
-          function ProgressEvent( snapshot ) {
-            var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
-            alert(`${porcentagem}%`);
-          },
-          function error( error ) {
-          alert( error );
-          },
-          function complete() { 
-            alert( "Upload realizado com sucesso!" );
-            window.location.assign( "mural.html" );
-          });
-        }).catch( function( error ) {
+      setStorage.on( "state_changed",
+        function ProgressEvent( snapshot ) {
+          var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
+          alert(`${porcentagem}%`);
+        },
+        function error( error ) {
+        alert( error );
+        },
+        function complete() { 
+          alert( "Upload realizado com sucesso!" );
+          window.location.assign( "mural.html" );
+        });
+      }).catch( function( error ) {
         var errorCode = error.code;
         var errorMessage = error.message;
         alert(errorMessage);
       });
-
     } else {
       console.log( "Senhas diferentes!" );
     }

@@ -6,14 +6,10 @@ $(document).ready(function() {
 
             /* Função de cadastro de turma */
             var escola = $( "#escola" );
-            var periodo = $( ".periodo checked" );
+            var periodo = $( "checked.periodo" );
             var serie = $( "#serie" );
-            var estado = $( ".estado selected" );
+            var estado = $( "selected.estado" );
             var cidade = $( "#cidade" );
-    
-            $( "#escola" ).change(function() {
-                alert( $(this).val() );
-            });
             
             // $( ".page-title" ).text( `Cadastro ${localStorage.getItem( "userType" )}` ); // Exibir do LocalStorage o tipo de usuário no título da página
 
