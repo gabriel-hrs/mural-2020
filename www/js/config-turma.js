@@ -1,44 +1,33 @@
 $(document).ready(function() {
 
-    firebase.auth().onAuthStateChanged( function( user ) {
-        if ( user ) {
-            var uid = user.uid;
+    // /* Função de cadastro de turma */ 
+    $( ".btn-confirm" ).on( "click", function( novaTurma ) {
+        novaTurma.preventDefault();
 
-            /* Função de cadastro de turma */
-            var escola = $( "#escola" );
-            var periodo = $( "checked.periodo" );
-            var serie = $( "#serie" );
-            var estado = $( "selected.estado" );
-            var cidade = $( "#cidade" );
-            
-            // $( ".page-title" ).text( `Cadastro ${localStorage.getItem( "userType" )}` ); // Exibir do LocalStorage o tipo de usuário no título da página
+        let data_turma = {
+            escola: $( "#escola" ).val(),
+            serie: $( "#serie" ).val(),
+            cidade: $( "#cidade" ).val()
+        };
+    
+        let data_token = {
+            key: Math.round(Math.random() * 100000000),
+            tipo: 'aluno',
+            escola: $( "#escola" ).val(),
+            serie: $( "#serie" ).val(),
+            cidade: $( "#cidade" ).val()
+        };
 
-            $( ".btn-confirm" ).on( "click", function( novaTurma ) {
-                novaTurma.preventDefault();
-
-                createTurma(
-                    escola.val(),
-                    periodo.val(),
-                    serie.val(),
-                    estado.val(),
-                    cidade.val()
-                );
-
-                function createTurma( escola, periodo, serie, estado, cidade ) {
-                    let data = {
-                        escola: escola,
-                        periodo: periodo,
-                        serie: serie,
-                        estado: estado,
-                        cidade: cidade
-                    };
-                    return firebase
-                    .database()
-                    .ref()
-                    .child( "Turmas/" + escola )
-                    .set( data );
-                }
-            });
+        function sendData() {
+            firebase.database().ref().child( "Turmas/" + data_turma.escola ).set( data_turma );
+            firebase.database().ref().child( "Tokens/Aluno/" + data_token.key ).set( data_token );
         }
-    });   
+
+        alert(`Novo token de turma criado com sucesso! Código do token:${data_token.key}`);
+        
+        return sendData();
+        // Para enviar os dados preciso retornar a função sendData, mas assim não redireciona a página
+        // Caso tente redirecionar antes, a função não é executada pois já está em outra página
+        window.location.assign( "turmas.html" );
+    });
 });

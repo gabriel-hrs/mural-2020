@@ -1,0 +1,37 @@
+$(document).ready(function() {
+
+    // /* Função de cadastro de turma */
+    createTurma();
+    createToken();   
+
+    $( ".btn-confirm" ).on( "click", function( novaTurma ) {
+        novaTurma.preventDefault();
+
+        createTurma();
+        createToken();        
+        window.location.assign( "turmas.html" );
+    });
+
+    function createTurma() {
+        let data = {
+            escola: $( "#escola" ).val(),
+            serie: $( "#serie" ).val(),
+            cidade: $( "#cidade" ).val()
+        };
+
+        return firebase.database().ref().child( "Turmas/" + data.escola ).set( data );
+    }
+
+    function createToken() {
+        let data = {
+            key: Math.round(Math.random() * 100000000),
+            tipo: 'aluno',
+            escola: $( "#escola" ).val(),
+            serie: $( "#serie" ).val(),
+            cidade: $( "#cidade" ).val()
+        };
+        alert(`Novo token de turma criado com sucesso! Código do token:${data.key}`);
+
+        return firebase.database().ref().child( "Tokens/Aluno/" + data.key ).set( data );
+    }    
+});

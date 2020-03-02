@@ -44,10 +44,6 @@ $(document).ready(function() {
     var token = $( "#token" );
     var error = "";
 
-    token.change( function() {
-        alert(token).val();
-    });
-
     $( ".send-token" ).on( "click", function( event ) {
       event.preventDefault();
     
@@ -57,13 +53,12 @@ $(document).ready(function() {
                     localStorage.setItem( "userType", item.val().tipo );
                     window.location.assign( "cadastro.html" );
                 } else {
-                    erro = "Token inválido";
+                    error = "Token inválido";
                 }
             });
 
             if(error !== "") {
                 alert(error);
-                console.log( error );
                 error = "";
             }
         });

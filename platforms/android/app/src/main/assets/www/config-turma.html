@@ -11,68 +11,94 @@
     <form>
       <div class="input-group text-field mb-4">
         <h2 class="label-field">Nome da Escola</h2>
-        <input type="text" class="form-control" name="escola" placeholder="Digite o nome da escola" aria-label="Nome da escola" aria-describedby="Nome da escola">
+        <input type="text" id="escola" class="form-control" name="escola" placeholder="Digite o nome da escola" aria-label="Nome da escola" aria-describedby="Nome da escola">
       </div>
       <div class="input-group checkbox-field mb-4">
         <h2 class="label-field">Período</h2>
         <label class="container">
-          <input type="checkbox" class="checkbox" aria-label="Manhã">
+          <input type="checkbox" class="periodo checkbox" aria-label="Manhã">
           <span class="checkmark"></span>
           Manhã
         </label>
         <label class="container">
-          <input type="checkbox" class="checkbox" aria-label="Tarde">
+          <input type="checkbox" class="periodo checkbox" aria-label="Tarde">
           <span class="checkmark"></span>
           Tarde
         </label>
         <label class="container">
-          <input type="checkbox" class="checkbox" aria-label="Noite">
+          <input type="checkbox" class="periodo checkbox" aria-label="Noite">
           <span class="checkmark"></span>
           Noite
         </label>
       </div>
       <div class="input-group text-field mb-4">
         <h2 class="label-field">Série escolar</h2>
-        <input type="text" class="form-control" name="serie" placeholder="Digite a série escolar da turma" aria-label="Série escolar" aria-describedby="Série escolar da turma">
+        <input type="text" id="serie" class="form-control" name="serie" placeholder="Digite a série escolar da turma" aria-label="Série escolar" aria-describedby="Série escolar da turma">
       </div>
       <div class="input-group select-field mb-4">
         <select class="custom-select" id="estados">
           <option selected>Estado</option>
-          <option value="AC">AC</option>
-          <option value="AL">AL</option>
-          <option value="AP">AP</option>
-          <option value="AM">AM</option>
-          <option value="BA">BA</option>
-          <option value="CE">CE</option>
-          <option value="DF">DF</option>
-          <option value="ES">ES</option>
-          <option value="GO">GO</option>
-          <option value="MA">MA</option>
-          <option value="MT">MT</option>
-          <option value="MS">MS</option>
-          <option value="MG">MG</option>
-          <option value="PA">PA</option>
-          <option value="PB">PB</option>
-          <option value="PR">PR</option>
-          <option value="PE">PE</option>
-          <option value="PI">PI</option>
-          <option value="RJ">RJ</option>
-          <option value="RN">RN</option>
-          <option value="RS">RS</option>
-          <option value="RO">RO</option>
-          <option value="RR">RR</option>
-          <option value="SC">SC</option>
-          <option value="SP">SP</option>
-          <option value="SE">SE</option>
-          <option value="TO">TO</option>
+          <option class="estado" value="AC">AC</option>
+          <option class="estado" value="AL">AL</option>
+          <option class="estado" value="AP">AP</option>
+          <option class="estado" value="AM">AM</option>
+          <option class="estado" value="BA">BA</option>
+          <option class="estado" value="CE">CE</option>
+          <option class="estado" value="DF">DF</option>
+          <option class="estado" value="ES">ES</option>
+          <option class="estado" value="GO">GO</option>
+          <option class="estado" value="MA">MA</option>
+          <option class="estado" value="MT">MT</option>
+          <option class="estado" value="MS">MS</option>
+          <option class="estado" value="MG">MG</option>
+          <option class="estado" value="PA">PA</option>
+          <option class="estado" value="PB">PB</option>
+          <option class="estado" value="PR">PR</option>
+          <option class="estado" value="PE">PE</option>
+          <option class="estado" value="PI">PI</option>
+          <option class="estado" value="RJ">RJ</option>
+          <option class="estado" value="RN">RN</option>
+          <option class="estado" value="RS">RS</option>
+          <option class="estado" value="RO">RO</option>
+          <option class="estado" value="RR">RR</option>
+          <option class="estado" value="SC">SC</option>
+          <option class="estado" value="SP">SP</option>
+          <option class="estado" value="SE">SE</option>
+          <option class="estado" value="TO">TO</option>
         </select>
       
-        <input type="text" class="form-control" name="cidade" placeholder="Cidade" id="user-city" aria-label="Cidade" aria-describedby="Cidade da pessoa">
+        <input type="text" class="form-control" name="cidade" placeholder="Cidade" id="cidade" aria-label="Cidade" aria-describedby="Cidade da pessoa">
       </div>
       <input type="submit" value="Adicionar" class="btn-orange btn-confirm" />
     </form>
   </body>
 
+  <!-- Vendors (externos) -->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  
+  <!-- Scripts (internos) -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/cadastro.js"></script> -->
+  <!-- <script type="text/javascript" src="js/config-tema.js"></script> -->
+  <script type="text/javascript" src="js/config-turma.js"></script>
+  <script type="text/javascript" src="js/db.js"></script>
+  <!-- <script type="text/javascript" src="js/dados-usuario.js"></script> -->
+  <!-- <script type="text/javascript" src="js/enviar-registro.js"></script> -->
+  <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  <!-- <script type="text/javascript" src="js/login-token.js"></script> -->
+  <!-- <script type="text/javascript" src="js/mural.js"></script> -->
+  <!-- <script type="text/javascript" src="js/toggle-menu.js"></script> -->
+  <!-- <script type="text/javascript" src="js/turma.js"></script> -->
+  <!-- <script type="text/javascript" src="js/turmas.js"></script> -->
+
+  <!-- Carregar folhas de estilo (css) -->
   <script src="components/metascripts.js"></script>
-  <script> makeHead('Login'); </script>
+  <script> makeHead('Turma', undefined, undefined); </script>
 </html>

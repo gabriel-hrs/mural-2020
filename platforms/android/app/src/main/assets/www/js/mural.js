@@ -19,24 +19,10 @@ $(document).ready(function() {
                     }
                     return nome_foto;
                 });
-                storageRef.child( `${uid}/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
+                storageRef.child( `${uid}/Perfil/${nome_foto}` ).getDownloadURL().then( function( downloadUrl ) {
                     $( "#top-bar .icon" ).attr( "src", downloadUrl );
                 });
             });
-        } else {
-            // alert( "Faça o login" );
-            // window.location.replace( "index.html" );
         }
     });   
-
-    /* LOGOUT */
-    $( "#logout" ).on( "click" , function( event ) {
-        event.preventDefault();
-
-        firebase.auth().signOut().then( function() {
-            window.location.assign( "index.html" );
-        }).catch( function( error ) {
-            alert( error );
-        });
-    });
 });

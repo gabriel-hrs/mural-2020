@@ -78,7 +78,7 @@ $(document).ready(function() {
                     return firebase
                     .database()
                     .ref()
-                    .child( "Temas/" + nome )
+                    .child( "Temas" + nome )
                     .set( data );
                 }
 
