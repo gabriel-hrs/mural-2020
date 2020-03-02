@@ -6,18 +6,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url('../img/back-login.png') center / contain no-repeat;
+    background: url('../img/back-login.png') center / 100vw no-repeat;
 }
+
 .login-page .header img {
     margin-bottom: 70px;
 }
 
 .login-page .header .nav {
-    width: 100vw;
+    padding: 0;
 }
 
 .login-page .header .nav li {
-    width: 50%;
+    min-width: 50vw;
 }
 
 .login-page .header .nav li .nav-item {
@@ -32,6 +33,10 @@
 }
 
 /* Wrapper */
+.login-page .wrapper {
+    width: 100vw;
+}
+
 .login-page .wrapper .group-field {
     margin: 50px 20px 0;
 }

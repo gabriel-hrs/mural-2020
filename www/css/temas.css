@@ -44,6 +44,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: cover;
 }
 
 .temas-page .temas-list .list-group-item .tema-title {

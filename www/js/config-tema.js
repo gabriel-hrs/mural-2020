@@ -34,7 +34,7 @@ $(document).ready(function() {
                 let data_tema = {
                     uid: firebase.auth().currentUser.uid,
                     // nome_professor: nome,
-                    imagem: $( "#imagem" ).val(),
+                    imagem: nomeImagem,
                     nome: $( "#nome-tema" ).val(),
                     descricao: $( "#descricao-tema" ).val()
                 };
