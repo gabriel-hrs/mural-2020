@@ -9,14 +9,14 @@ $(document).ready(function() {
             var nome = user.nome;
             var storage = firebase.storage();
             var storageRef = storage.ref();
+            objImagem = "";
+            nomeImagem = "";
 
             /* Função de cadastro de tema */
             $( "#imagem" ).change(function(){
                 $( ".perfil" ).removeClass("default-photo");
             });
-
-            objImagem = "";
-            nomeImagem = "";
+            
             $( "#imagem" ).on('change',function(e){
                 let file = e.target.files[0];
             
@@ -65,17 +65,7 @@ $(document).ready(function() {
                             window.location.assign( "temas.html" );
                         });
                     });
-                    
-                });                    
-
-                // function sendData() {
-                    
-                // }
-
-                // return sendData();
-                // Para enviar os dados preciso retornar a função sendData, mas assim não redireciona a página
-                // Caso tente redirecionar antes, a função não é executada pois já está em outra página
-                // window.location.assign( "temas.html" );
+                });          
             });
         }
     });   

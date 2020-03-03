@@ -204,6 +204,26 @@ select.custom-select option {
     mask-repeat: no-repeat;
 }
 
+.menu-bar .add-registro {
+    justify-content: center;
+    display: flex;
+    min-height: 60px;
+}
+
+.menu-bar .add-registro .btn-circle {
+    position: absolute;
+    top: 0;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.menu-bar .add-registro .btn-circle .icon {
+    max-width: 25px;
+    max-height: 25px;
+    min-width: unset;
+    background-color: transparent;
+}
+
 .menu-bar .add-post {
     background-color: #E83F3C;
     border-radius: 50em;
