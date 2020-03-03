@@ -66,7 +66,7 @@ select.custom-select option {
 }
 
 .btn-orange {
-    background-color: #E83F3C;
+    background-color: #E83F3C !important;
     border-radius: 5px;
     color: white;
     border: 0;
@@ -112,6 +112,10 @@ select.custom-select option {
 
 .carousel-inner {
     width: 100vw !important;
+}
+
+input:focus {
+    color: white;
 }
 
 /* 
@@ -296,7 +300,7 @@ body.preloader-site {
 .preloader-wrapper {
     height: 100%;
     width: 100%;
-    background: #FFF;
+    background: rgba(255, 255, 255, .9);
     position: fixed;
     top: 0;
     left: 0;
