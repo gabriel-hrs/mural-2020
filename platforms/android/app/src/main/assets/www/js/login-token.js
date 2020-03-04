@@ -51,6 +51,9 @@ $(document).ready(function() {
             snapshot.forEach( function( item ) {
                 if( item.val().key == token.val() ) {
                     localStorage.setItem( "userType", item.val().tipo );
+                    localStorage.setItem( "escolaTurma", item.val().escola );
+                    localStorage.setItem( "serieTurma", item.val().serie );
+                    alert("Token válido");
                     window.location.assign( "cadastro.html" );
                 } else {
                     error = "Token inválido";

@@ -41,7 +41,9 @@ $(document).ready(function() {
         userEmail.val(), 
         userState.val(), 
         userCity.val(),
-        localStorage.getItem("userType")
+        localStorage.getItem("userType"),
+        localStorage.getItem("escolaTurma"),
+        localStorage.getItem("serieTurma"),
       );
 
       createImagesPerfil(
@@ -72,14 +74,16 @@ $(document).ready(function() {
     }
   });
 
-  function createUser( uid, nome, email, estado, cidade, tipo ) {
+  function createUser( uid, nome, email, estado, cidade, tipo, escola, serie ) {
     let data = {
       uid: uid,
       nome: nome,
       email: email,
       estado: estado,
       cidade: cidade,
-      tipo: tipo
+      tipo: tipo,
+      escola: escola,
+      serie: serie
     };
     return firebase
     .database()

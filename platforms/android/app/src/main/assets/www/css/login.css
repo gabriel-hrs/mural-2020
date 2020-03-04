@@ -8,12 +8,12 @@
     justify-content: flex-end;
     background: url('../img/back-login.png') center / 100vw no-repeat;
 }
+
 .login-page .header img {
     margin-bottom: 70px;
 }
 
 .login-page .header .nav {
-    /* max-width: 100vw; */
     padding: 0;
 }
 

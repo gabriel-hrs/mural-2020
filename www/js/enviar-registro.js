@@ -75,8 +75,11 @@ jQuery(document).ready(function($) {
               // nome_professor: nome,
               imagem: nomeImagem,
               url_imagem: url,
-              nome: $( "#nome-tema" ).val(),
-              descricao: $( "#descricao-tema" ).val()
+              tema: $( "#temas option:selected" ).val(),
+              resumo: $( "#descricao-tema" ).val(),
+              serie: $("#serie-aluno").val(),
+              escola: $("#escola-aluno").val(),
+              fonte: $( "#fonte-field option:selected" ).val(),
           };
 
           let data_imagem = {
@@ -85,8 +88,9 @@ jQuery(document).ready(function($) {
           };
 
           firebase.database().ref().child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Registros" ).set( data_imagem );
-          firebase.database().ref().child( "Registros/" + data_tema.nome ).set( data_registro ).then( function() {
+          firebase.database().ref().child( "Registros/" + data_registro.tema ).set( data_registro ).then( function() {
             console.log( "Upload realizado com sucesso!" );
+            document.getElementById("regForm").submit();
             window.location.assign( "mural.html" );
           });
         });
@@ -94,7 +98,6 @@ jQuery(document).ready(function($) {
     }
   });
 });
-
 
 /* Validação do Multi Step Form */
 var currentTab = 0; // Current tab is set to be the first tab (0)

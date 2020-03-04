@@ -66,7 +66,7 @@ select.custom-select option {
 }
 
 .btn-orange {
-    background-color: #E83F3C;
+    background-color: #E83F3C !important;
     border-radius: 5px;
     color: white;
     border: 0;
@@ -112,6 +112,10 @@ select.custom-select option {
 
 .carousel-inner {
     width: 100vw !important;
+}
+
+input:focus {
+    color: white;
 }
 
 /* 
@@ -204,6 +208,26 @@ select.custom-select option {
     mask-repeat: no-repeat;
 }
 
+.menu-bar .add-registro {
+    justify-content: center;
+    display: flex;
+    min-height: 60px;
+}
+
+.menu-bar .add-registro .btn-circle {
+    position: absolute;
+    top: 0;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.menu-bar .add-registro .btn-circle .icon {
+    max-width: 25px;
+    max-height: 25px;
+    min-width: unset;
+    background-color: transparent;
+}
+
 .menu-bar .add-post {
     background-color: #E83F3C;
     border-radius: 50em;
@@ -266,4 +290,27 @@ select.custom-select option {
 
 .toggle-up {
     transform: translateY(-100%);
+}
+
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

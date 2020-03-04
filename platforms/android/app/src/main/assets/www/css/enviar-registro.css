@@ -5,6 +5,10 @@
     background-color: #ff6666 !important;
 }
 
+#regForm .finish {
+    background-color: #4CAF50 !important;
+}
+
 .tab {
     display: none;
 }
@@ -43,8 +47,20 @@
     color: #ffffff;
 }
 
-.enviar-registro-page form .text-field .readonly-input.form-control{
+.enviar-registro-page form .text-field .readonly-input {
     color: #bdbdbd;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    background: rgba(183, 183, 183, 0.15);
+    border-radius: 4px;
+    border: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .enviar-registro-page form .text-field .form-control {
@@ -58,6 +74,10 @@
     min-height: 90px;
 }
 
+.enviar-registro-page form .textarea-field .form-control:focus {
+    color: white;
+}
+
 .enviar-registro-page form .btn-confirm {
     background-color: rgba(172, 172, 172, 0.4);
     color: #ffffff;
@@ -65,15 +85,17 @@
     font-size: 30px;
     min-width: 60px;
     min-height: 60px;
+    border-radius: 50em !important;
 }
 
 .enviar-registro-page form .format-field {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(2, 50vw);
+    grid-gap: 0px;
 }
 
-.enviar-registro-page form .format-field .btn-icon {
+.enviar-registro-page form .tab2 .format-field > .input-group {
+    max-width: 100%;
     min-height: 130px;
     background: rgba(13, 12, 12, 0.3);
     border-radius: 12px;
@@ -82,6 +104,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.enviar-registro-page form .format-field .btn-icon {
+    background: rgba(13, 12, 12, 0.3);
+    border: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0
+    ;
 }
 
 .enviar-registro-page form .format-field .btn-icon .icon {
