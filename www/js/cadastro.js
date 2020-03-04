@@ -13,14 +13,12 @@ $(document).ready(function() {
   var imageName = "";
 
   userPhoto.on('change',function(e){
-
     let file = e.target.files[0];
 
     let reader = new FileReader();
     reader.onload = function (element) {
       $('.btn-circle').css({'background-image':`url('${element.target.result}')`});
-    };
-    
+    };  
     reader.readAsDataURL(file);
 
     image = file;
@@ -35,39 +33,42 @@ $(document).ready(function() {
     if( userPassword.val() == userConfirmPassword.val() ){
       firebase.auth().createUserWithEmailAndPassword( userEmail.val(), userPassword.val() )
       .then( function( sucess ){
-      createUser(
-        firebase.auth().currentUser.uid,
-        userName.val(),
-        userEmail.val(), 
-        userState.val(), 
-        userCity.val(),
-        localStorage.getItem("userType"),
-        localStorage.getItem("escolaTurma"),
-        localStorage.getItem("serieTurma"),
-      );
+        createUser(
+          firebase.auth().currentUser.uid,
+          userName.val(),
+          userEmail.val(), 
+          userState.val(), 
+          userCity.val(),
+          localStorage.getItem("userType"),
+          localStorage.getItem("escolaTurma"),
+          localStorage.getItem("serieTurma"),
+        );
 
-      createImagesPerfil(
-        imageName
-      );
+        if( userPhoto !== "" ) {
+          createImagesPerfil(
+            imageName
+          );
+        
+          let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
 
-      let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
-
-      setStorage.on( "state_changed",
-        function ProgressEvent( snapshot ) {
-          var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
-          alert(`${porcentagem}%`);
-        },
-        function error( error ) {
-        alert( error );
-        },
-        function complete() { 
-          alert( "Upload realizado com sucesso!" );
-          window.location.assign( "mural.html" );
-        });
+          setStorage.on( "state_changed",
+          function ProgressEvent( snapshot ) {
+            var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
+            alert(`${porcentagem}%`);
+          },
+          function error( error ) {
+          console.log( error );
+          },
+          function complete() { 
+            alert( "Upload realizado com sucesso!" );
+            window.location.assign( "mural.html" );
+          });
+        }
       }).catch( function( error ) {
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert(errorMessage);
+        console.log(errorCode);
+        console.log(errorMessage);
       });
     } else {
       console.log( "Senhas diferentes!" );

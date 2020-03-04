@@ -114,7 +114,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) { // A última tab
-    document.getElementById("nextBtn").innerHTML = "Enviar";
+    document.getElementById("nextBtn").innerHTML = "➝";
   } else {
     document.getElementById("nextBtn").innerHTML = "➝";
   }
