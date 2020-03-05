@@ -7,20 +7,21 @@
 /* Header */
 .config-turma-page .header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 30px 0;
+    align-items: center;
 }
 
 .config-turma-page .header .btn-back {
     font-size: 30px;
     color: #ffffff;
+    position: absolute;
+    left: 30px;
 }
 
 .config-turma-page .header .page-title {
     color: #ffffff;
-    margin-left: 70px;
     margin-bottom: 0;
-    align-self: center;
 }
 
 /* Formulário */
@@ -122,3 +123,16 @@
     border-right: transparent;
     border-left: transparent;
 }  
+
+.config-turma-page form #temas-da-turma {
+    background: rgba(183, 183, 183, 0.15);
+    
+}
+
+.config-turma-page form #temas-da-turma #temas {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.option-select {
+    color: black;
+}

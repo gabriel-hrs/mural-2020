@@ -1,12 +1,8 @@
 $(document).ready(function() {
 
-    /* Botão Switch Toggle do formulário de tema */
-    // $("#toggle-check").bootstrapToggle();
-
     firebase.auth().onAuthStateChanged( function( user ) {
         if ( user ) {
             var uid = user.uid;
-            var nome = user.nome;
             var storage = firebase.storage();
             var storageRef = storage.ref();
             objImagem = "";

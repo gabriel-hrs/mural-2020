@@ -17,16 +17,16 @@
           <a href="mural.html" class="btn-back">⟵</a>
           <h1 class="page-title">Selecione um tema</h1>
         </div>
+        <h2 class="label-field">Tema</h2>
         <div class="input-group select-field text-field mb-4">
-          <h2 class="label-field">Tema</h2>
           <!-- Temas aqui -->
         </div>
         <div class="input-group text-field mb-4">
-          <h2 class="label-field">Série</h2>
+          <h2 class="label-field">Sua série</h2>
           <input type="text" id="serie-aluno" class="readonly-input" name="serie" value="#8-serie" placeholder="#8-serie" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
         </div>
         <div class="input-group text-field mb-4">
-          <h2 class="label-field">Escola</h2>
+          <h2 class="label-field">Sua escola</h2>
           <input type="text" id="escola-aluno" class="readonly-input" name="escola" value="#anhembi-morumbi" placeholder="#anhembi-morumbi" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
         </div>
         <div class="input-group text-field mb-4">
@@ -82,13 +82,11 @@
         </div>
       </div> 
       
-      <div style="overflow:auto;">
-        <div style="float:right;">
-          <button type="button" id="prevBtn" class="btn-circle btn-confirm" onclick="nextPrev(-1)">⟵</button>
-          <button type="button" id="nextBtn" class="btn-circle btn-confirm" onclick="nextPrev(1)">➝</button>
-        </div>
+      <div class="btn-send-registro">
+        <button type="button" id="prevBtn" class="btn-circle btn-confirm" onclick="nextPrev(-1)">⟵</button>
+        <button type="button" id="nextBtn" class="btn-circle btn-confirm" onclick="nextPrev(1)">➝</button>
       </div>
-        
+
     </form>
   </body>
 

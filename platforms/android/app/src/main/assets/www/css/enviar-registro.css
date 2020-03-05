@@ -90,13 +90,13 @@
 
 .enviar-registro-page form .format-field {
     display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
 }
 
 .enviar-registro-page form .tab2 .format-field > .input-group {
     max-width: 100%;
-    min-height: 130px;
+    min-height: 150px;
     background: rgba(13, 12, 12, 0.3);
     border-radius: 12px;
     border: transparent;
@@ -109,12 +109,11 @@
 .enviar-registro-page form .format-field .btn-icon {
     background: rgba(13, 12, 12, 0.3);
     border: 0;
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     position: absolute;
     top: 0;
-    opacity: 0
-    ;
+    opacity: 0;
 }
 
 .enviar-registro-page form .format-field .btn-icon .icon {
@@ -122,4 +121,18 @@
 }
 .enviar-registro-page form .format-field .btn-icon .label-field {
     margin-bottom: 0;
+}
+
+.enviar-registro-page .tema-form .btn-send-registro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enviar-registro-page .tema-form .btn-send-registro #prevBtn {
+    margin: 0 30px !important;
+}
+
+.enviar-registro-page .tema-form .btn-send-registro button {
+    max-width: 60px;
+    line-height: 1;
 }

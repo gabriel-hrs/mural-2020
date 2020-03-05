@@ -26,6 +26,7 @@ function makeHead(title, exceptionsCSS){
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
     <link rel="stylesheet" href="css/select2.css">
     <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     `
 
     if(exceptionsCSS !== undefined){

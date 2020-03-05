@@ -3,8 +3,7 @@ $(document).ready(function() {
     /* Coletar dados do usuário. */
     firebase.auth().onAuthStateChanged( function( user ) {
         if ( user ) {
-            var uid = user.uid;
-            
+            var uid = user.uid;            
             var storage = firebase.storage();
             var storageRef = storage.ref();
             var db = firebase.database();
@@ -14,11 +13,15 @@ $(document).ready(function() {
                     var key = item.key;
                     $( `.${key}` ).val( item.val() );
 
-                    // if( key = 'estado' ) {
-                    //     $( `.${key}` ).val( item.val() );
-                    //     console.log(item.val());
-                    // }
-
+                    if( key == 'estado' ) {
+                        // $('.estado').filter(function() { 
+                        //     return ($(this).val() == item.val()); //To select Blue
+                        // }).prop('selected', true);
+                        // $( `.estado[value='${item.val()}']` ).prop('selected', true);
+                        // $(".estado").prop('selected', true);
+                        $("#states").val(item.val());
+                        console.log(item.val());
+                    }
                     // var user = firebase.auth().currentUser;
                     // $(".senha").val( user.getToken() );
                 });
