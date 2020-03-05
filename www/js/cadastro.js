@@ -48,6 +48,16 @@ $(document).ready(function() {
           createImagesPerfil(
             imageName
           );
+
+          if( localStorage.getItem( "userType" ) == 'professor' ) {
+            localStorage.setItem( "nomeProf", userName.val() );
+            localStorage.setItem( "imagemProf", imageName );
+            // localStorage.setItem( "urlProf", url.val() );
+          } else if ( localStorage.getItem( "userType" ) == 'aluno' ) {
+            localStorage.setItem( "nomeAluno", userName.val() );
+            localStorage.setItem( "imagemAluno", imageName );
+            // localStorage.setItem( "urlAluno", url.val() );
+          }
         
           let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Perfil/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
 

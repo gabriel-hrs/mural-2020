@@ -1,18 +1,14 @@
 $(document).ready(function() {
 
-    /* Campo do tipo Select2 para Temas da turma */
-    
-
-    // $( "#temas-da-turma" ).set( "theme", "bootstrap" );
-
     firebase.auth().onAuthStateChanged( function( user ) {
         var uid = user.uid;
-        var nomeProf = user.nome;
-        // var imagemProf = user.Imagens.Perfil.foto_perfil;
-        var tipo = user.tipo;
+        var nomeProf = localStorage.getItem("nomeProf");
+        console.log(nomeProf);
+        var imagemProf = localStorage.getItem("imagemProf");
+        var tipo = localStorage.getItem("userType");
         // var urlProf = user.Imagens.Perfil.url_foto_perfil;
 
-        /* Select de temas */
+        /* Select2 de temas */
         firebase.database().ref("Temas").on("value", function(snapshot) {
             let data_temas = [];
             let convertedArray = [];
@@ -21,15 +17,13 @@ $(document).ready(function() {
                 convertedArray.push(data_temas);
                 data_temas++;
                 $( "#temas" ).select2({
-                        data: convertedArray,
-                        tags: true
-                    });
+                    data: convertedArray,
+                    tags: true
                 });
-        });
+            });
+        });        
 
-        
-
-        // /* Função de cadastro de turma */ 
+        /* Função de cadastro de turma */ 
         $( ".btn-confirm" ).on( "click", function( novaTurma ) {
             novaTurma.preventDefault();
 
@@ -37,7 +31,9 @@ $(document).ready(function() {
                 escola: $( "#escola" ).val(),
                 serie: $( "#serie" ).val(),
                 cidade: $( "#cidade" ).val(),
-                temas: $( "#temas option:selected" ).val()
+                temas: [
+                    $( "#temas option:selected" ).val()
+                ]
             };
         
             let data_token = {
@@ -51,7 +47,7 @@ $(document).ready(function() {
             let data_notificacao = {
                 uid: firebase.auth().currentUser.uid,
                 imagem: imagemProf,
-                url_imagem_prof: urlProf,
+                // url_imagem_prof: urlProf,
                 nome_prof: nomeProf,
                 nome_turma: $( "#escola" ).val(),
                 mensagem: ' postou um novo tema.',
