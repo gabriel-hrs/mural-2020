@@ -53,6 +53,9 @@ $(document).ready(function() {
                     localStorage.setItem( "userType", item.val().tipo );
                     localStorage.setItem( "escolaTurma", item.val().escola );
                     localStorage.setItem( "serieTurma", item.val().serie );
+                    localStorage.setItem( "cidadeTurma", item.val().cidade );
+                    localStorage.setItem( "estadoTurma", item.val().estado );
+                    localStorage.setItem( "token", item.val().key );
 
                     alert("Token válido");
                     window.location.assign( "cadastro.html" );

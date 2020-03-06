@@ -51,11 +51,10 @@ jQuery(document).ready(function($) {
       var sendImage = $( "#formato-imagem" );
       var image = "";
       var imageName = "";
-      var nomeAluno = localStorage.getItem("nomeAluno");
-      console.log(nomeAluno);
-      var imagemAluno = localStorage.getItem("imagemALuno");
+      var nomeAluno = localStorage.getItem("nome");
+      var imagemAluno = localStorage.getItem("imagem");
       var tipo = localStorage.getItem("userType");
-      // var urlAluno = user.Imagens.Perfil.url_foto_perfil;
+      var urlAluno = localStorage.getItem("url");
 
       sendImage.on('change',function(e){
         let file = e.target.files[0];
@@ -69,7 +68,15 @@ jQuery(document).ready(function($) {
         image = file;
         imageName = file.name;
       });  
-      
+
+      $("#fonte-text").on('change',function(){
+        console.log( $(this).val() );
+      });
+
+      console.log( localStorage.getItem( "url" ) );
+      console.log( localStorage.getItem( "imagem" ) );
+      console.log( localStorage.getItem( "nome" ) );
+
       firebase.database().ref("Usuarios").on("value", function(snapshot) {       
         snapshot.forEach(function( item ) {
           if( item.val().uid == uid ) {
@@ -153,7 +160,6 @@ jQuery(document).ready(function($) {
       }
 
      function sendRegistro() {
-       console.log($( "#fonte-text" ).val());
         let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
           setStorage.on( "state_changed",
           function ProgressEvent( snapshot ) {
@@ -163,13 +169,16 @@ jQuery(document).ready(function($) {
           function error( error ) {
             console.log( error );
           },
-          function complete() {            
+          function complete() {   
+            console.log($( "#fonte-text" ).val());         
             storageRef.child( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).getDownloadURL().then( function( url ) {
               let data_registro = {
                 uid: firebase.auth().currentUser.uid,
-                nome_aluno: nomeAluno,
+                nome_aluno: localStorage.getItem( "nome" ),
+                imagem_aluno: localStorage.getItem( "imagem" ),
+                url_aluno: localStorage.getItem( "url" ),
                 imagem: imageName,
-                url_imagem: url,
+                url: url,
                 tema: $( "#temas option:selected" ).val(),
                 resumo: $( "#resumo-registro" ).val(),
                 serie: $("#serie-aluno").val(),
@@ -185,9 +194,9 @@ jQuery(document).ready(function($) {
 
               let data_notificacao = {
                 uid: firebase.auth().currentUser.uid,
-                imagem: imagemAluno,
-                url: url,
-                nome: nomeAluno,
+                imagem: localStorage.getItem( "imagem" ),
+                url: localStorage.getItem( "url" ),
+                nome: localStorage.getItem( "nome" ),
                 nome_turma: $( "#escola-aluno" ).val(),
                 mensagem: ' enviou um novo registro. Esperando por avaliação do professor.',
                 status: 'enviado',

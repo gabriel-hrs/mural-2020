@@ -11,7 +11,7 @@
     margin-top: 82px;
 }
 
-.notificacoes-list .list-group-item {
+.notificacoes-list .notificacao-link {
     display: grid;
     grid-gap: 5px 10px;
 }
@@ -20,20 +20,20 @@
     max-width: 50px;
 }
 
-.notificacoes-list .list-group-item.disabled {
+.notificacoes-list .list-group-item .notificacao-link.disabled {
     background: rgba(196, 196, 196, 0.2);
 }
 
-.notificacoes-list .name {
+.notificacoes-list .action {
     font-size: 20px;
     grid-column: 2;
-    font-weight: 700;
+    font-weight: 400 !important;
     margin-bottom: 0;
     align-self: center;
 }
 
-.notificacao-list .name span {
-    font-weight: 400;
+.notificacao-list .action.name {
+    font-weight: 700 !important;
 }
 
 .notificacoes-list .notificacao-extra {

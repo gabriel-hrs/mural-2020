@@ -35,7 +35,7 @@ $(document).ready(function() {
             }
 
             /* Loop de notificações */
-            firebase.database().ref('Notificações/Professor' ).on("value", function(snapshot) {
+            firebase.database().ref('Notificações/' + caminho ).on("value", function(snapshot) {
                 $(".notificacoes-list").html("");
 
                 var notificacoes = "<ul class='list-group temas-list'>";
@@ -50,7 +50,6 @@ $(document).ready(function() {
                             notificacoes += `<p class='notificacao-extra'>${notificacao.val().tipo}<span> - ${notificacao.val().data}</span></p>`;
                         notificacoes += "</a>";
                     notificacoes += "</li>";
-                    
                 });
                 
                 notificacoes += "</ul>";

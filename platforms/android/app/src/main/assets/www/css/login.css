@@ -28,7 +28,7 @@
 }
 
 .login-page .header .nav li.active .nav-item {
-    background-color: rgba(196, 196, 196, 0.4);
+    background-color: #ffffff;
     pointer-events: none;
 }
 
