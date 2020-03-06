@@ -41,6 +41,11 @@ jQuery(document).ready(function($) {
       var sendImage = $( "#formato-imagem" );
       var image = "";
       var imageName = "";
+      var nomeAluno = localStorage.getItem("nomeAluno");
+      console.log(nomeAluno);
+      var imagemAluno = localStorage.getItem("imagemALuno");
+      var tipo = localStorage.getItem("userType");
+      // var urlAluno = user.Imagens.Perfil.url_foto_perfil;
 
       sendImage.on('change',function(e){
         let file = e.target.files[0];
@@ -93,6 +98,7 @@ jQuery(document).ready(function($) {
                 serie: $("#serie-aluno").val(),
                 escola: $("#escola-aluno").val(),
                 fonte: $( "#fonte-field option:selected" ).val(),
+                status: 'enviado'
               };
 
               let data_imagem = {
@@ -100,6 +106,19 @@ jQuery(document).ready(function($) {
                 url_imagem: url
               };
 
+              let data_notificacao = {
+                uid: firebase.auth().currentUser.uid,
+                imagem: imagemAluno,
+                // url_imagem_aluno: urlAluno,
+                nome_aluno: nomeAluno,
+                nome_turma: $( "#escola" ).val(),
+                mensagem: ' enviou um novo registro. Esperando por avaliação do professor.',
+                status: 'enviado',
+                tipo: tipo,
+                data: firebase.database.ServerValue.TIMESTAMP
+              };
+
+              firebase.database().ref().child( "Notificações/Professor" + data_notificacao.uid ).set( data_notificacao );            
               firebase.database().ref().child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Registros" ).set( data_imagem );
               firebase.database().ref().child( "Registros/" + data_registro.tema ).set( data_registro ).then( function() {
                 console.log( "Upload realizado com sucesso!" );

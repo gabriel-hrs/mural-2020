@@ -4,11 +4,11 @@
   </head>
 
   <body class="config-turma-page container">
-    <div class="preloader-wrapper">
+    <!-- <div class="preloader-wrapper">
       <div class="preloader">
         <img src="img/preloader.svg" alt="NILA">
       </div>
-    </div>
+    </div> -->
     
     <div class="header">
       <a href="turmas.html" class="btn-back">⟵</a>
@@ -75,9 +75,11 @@
       
         <input type="text" id="cidade" class="form-control" name="cidade" placeholder="Cidade" aria-label="Cidade" aria-describedby="Cidade da pessoa">
       </div>
+      
       <h2 class="label-field">Temas</h2>
       <div id="temas-da-turma" class="input-group select-field text-field mb-4">
         <!-- Temas aqui -->
+        <select class='form-control' id='temas' multiple="multiple"></select>
       </div>
       <input type="submit" value="Adicionar" class="btn-orange btn-confirm" />
     </form>
@@ -91,20 +93,22 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <!-- <script type="text/javascript" src="js/select2.full.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
   
   <!-- Scripts (internos) -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- <script type="text/javascript" src="js/cadastro.js"></script> -->
   <!-- <script type="text/javascript" src="js/config-tema.js"></script> -->
   <script type="text/javascript" src="js/config-turma.js"></script>
   <script type="text/javascript" src="js/db.js"></script>
   <!-- <script type="text/javascript" src="js/dados-usuario.js"></script> -->
+  <script type="text/javascript" src="js/getUid.js"></script>
   <!-- <script type="text/javascript" src="js/enviar-registro.js"></script> -->
   <!-- <script type="text/javascript" src="js/index.js"></script> -->
   <!-- <script type="text/javascript" src="js/login-token.js"></script> -->
   <!-- <script type="text/javascript" src="js/mural.js"></script> -->
-  <script type="text/javascript" src="js/preloader.js"></script>
+  <!-- <script type="text/javascript" src="js/preloader.js"></script> -->
   <!-- <script type="text/javascript" src="js/toggle-menu.js"></script> -->
   <!-- <script type="text/javascript" src="js/turma.js"></script> -->
   <!-- <script type="text/javascript" src="js/turmas.js"></script> -->

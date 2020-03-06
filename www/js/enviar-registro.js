@@ -1,20 +1,30 @@
 jQuery(document).ready(function($) {
 
   /* Campo do tipo Select2 para Fonte do registro */
-  // $( "#fonte-field" ).select2({
+  // $( "#fonte-link" ).select2({
   //     theme: "bootstrap"
   // });
   
-  if($("#temas option").val() && $("#fonte-field option").val() && $("#resumo").val() !== ""){      
+  if($("#temas option").val() && $("#fonte-link option").val() && $("#resumo").val() !== ""){      
     $("#nextBtn").addClass("btn-orange");    
   } 
 
+  let registro_fonte = localStorage.getItem( "fonteRegistro" );
+
+  console.log(registro_fonte);
+
+  if( registro_fonte !== null ) {
+    $("#fonte-text").css("display", "none");
+    $("#fonte-link").css("display", "inline");
+    $("#fonte-link").val(registro_fonte);
+  }
+
   $( "#escola-aluno" ).click( function() {
-    alert("O botão exibe automaticamente a escola do aluno.");
+    alert("O campo exibe automaticamente a escola do aluno.");
   });
 
   $( "#serie-aluno" ).click( function() {
-    alert("O botão exibe automaticamente a série do aluno.");
+    alert("O campo exibe automaticamente a série do aluno.");
   });
 
   /* Select de temas */
@@ -41,6 +51,11 @@ jQuery(document).ready(function($) {
       var sendImage = $( "#formato-imagem" );
       var image = "";
       var imageName = "";
+      var nomeAluno = localStorage.getItem("nomeAluno");
+      console.log(nomeAluno);
+      var imagemAluno = localStorage.getItem("imagemALuno");
+      var tipo = localStorage.getItem("userType");
+      // var urlAluno = user.Imagens.Perfil.url_foto_perfil;
 
       sendImage.on('change',function(e){
         let file = e.target.files[0];
@@ -85,14 +100,16 @@ jQuery(document).ready(function($) {
             storageRef.child( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).getDownloadURL().then( function( url ) {
               let data_registro = {
                 uid: firebase.auth().currentUser.uid,
-                // nome_professor: nome,
+                nome_aluno: nameUser,
                 imagem: imageName,
                 url_imagem: url,
+                nome_turma: $( "#escola" ).val(),
                 tema: $( "#temas option:selected" ).val(),
                 resumo: $( "#descricao-tema" ).val(),
                 serie: $("#serie-aluno").val(),
                 escola: $("#escola-aluno").val(),
-                fonte: $( "#fonte-field option:selected" ).val(),
+                fonte: $( "#fonte-link option:selected" ).val(),
+                status: 'enviado'
               };
 
               let data_imagem = {
@@ -100,8 +117,21 @@ jQuery(document).ready(function($) {
                 url_imagem: url
               };
 
+              let data_notificacao = {
+                uid: firebase.auth().currentUser.uid,
+                imagem: imagemAluno,
+                // url_imagem_aluno: urlAluno,
+                nome_aluno: nomeAluno,
+                nome_turma: $( "#escola" ).val(),
+                mensagem: ' enviou um novo registro. Esperando por avaliação do professor.',
+                status: 'enviado',
+                tipo: tipo,
+                data: firebase.database.ServerValue.TIMESTAMP
+              };
+
+              firebase.database().ref().child( "Notificações/Professor" + data_notificacao.uid ).set( data_notificacao );            
               firebase.database().ref().child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Registros" ).set( data_imagem );
-              firebase.database().ref().child( "Registros/" + data_registro.tema ).set( data_registro ).then( function() {
+              firebase.database().ref().child( "Registros/" + data_registro.serie + "/" + data_registro.uid ).set( data_registro ).then( function() {
                 console.log( "Upload realizado com sucesso!" );
                 document.getElementById("regForm").submit();
                 window.location.assign( "mural.html" );

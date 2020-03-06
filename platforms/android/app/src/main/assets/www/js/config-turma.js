@@ -1,35 +1,29 @@
 $(document).ready(function() {
 
-    /* Campo do tipo Select2 para Temas da turma */
-    $( "#temas-da-turma" ).select2({
-        theme: "bootstrap"
-    });
-
-    // $( "#temas-da-turma" ).set( "theme", "bootstrap" );
-
     firebase.auth().onAuthStateChanged( function( user ) {
         var uid = user.uid;
-        var nomeProf = user.nome;
-        // var imagemProf = user.Imagens.Perfil.foto_perfil;
-        var tipo = user.tipo;
+        var nomeProf = localStorage.getItem("nomeProf");
+        console.log(nomeProf);
+        var imagemProf = localStorage.getItem("imagemProf");
+        var tipo = localStorage.getItem("userType");
         // var urlProf = user.Imagens.Perfil.url_foto_perfil;
 
-        /* Select de temas */
+        /* Select2 de temas */
         firebase.database().ref("Temas").on("value", function(snapshot) {
-            $("#temas-da-turma").html("");
-            
-            var temas = "<select class='form-control' id='temas'>";
-            temas += "<option class='option-select' value='' placeholder='Selecione os #temas' selected>Selecione os #temas</option>";
-        
-            snapshot.forEach(function( tema ) {
-            temas += `<option class='option-select' value=#${tema.val().nome}>#${tema.val().nome}</option>`;
+            let data_temas = [];
+            let convertedArray = [];
+            snapshot.forEach( function( tema ) {
+                data_temas = tema.val().nome;
+                convertedArray.push(data_temas);
+                data_temas++;
+                $( "#temas" ).select2({
+                    data: convertedArray,
+                    tags: true
+                });
             });
-            
-            temas += "</select>";
-            $("#temas-da-turma").html(temas);
-        });
+        });        
 
-        // /* Função de cadastro de turma */ 
+        /* Função de cadastro de turma */ 
         $( ".btn-confirm" ).on( "click", function( novaTurma ) {
             novaTurma.preventDefault();
 
@@ -37,7 +31,9 @@ $(document).ready(function() {
                 escola: $( "#escola" ).val(),
                 serie: $( "#serie" ).val(),
                 cidade: $( "#cidade" ).val(),
-                temas: $( "#temas option:selected" ).val()
+                temas: [
+                    $( "#temas option:selected" ).val()
+                ]
             };
         
             let data_token = {
@@ -51,7 +47,7 @@ $(document).ready(function() {
             let data_notificacao = {
                 uid: firebase.auth().currentUser.uid,
                 imagem: imagemProf,
-                url_imagem_prof: urlProf,
+                // url_imagem_prof: urlProf,
                 nome_prof: nomeProf,
                 nome_turma: $( "#escola" ).val(),
                 mensagem: ' postou um novo tema.',
@@ -60,7 +56,7 @@ $(document).ready(function() {
             };
 
             function sendData() {
-                firebase.database().ref().child( "Notificações/" + data_notificacao.uid ).set( data_notificacao );
+                firebase.database().ref().child( "Notificações/Turma/" + data_notificacao.nome_turma ).set( data_notificacao );
                 firebase.database().ref().child( "Turmas/" + data_turma.escola ).set( data_turma );
                 firebase.database().ref().child( "Tokens/" + data_token.key ).set( data_token ).then( function() {
                     alert(`Novo token de turma criado com sucesso! Código do token:${data_token.key}`);

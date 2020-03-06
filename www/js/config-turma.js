@@ -56,7 +56,7 @@ $(document).ready(function() {
             };
 
             function sendData() {
-                firebase.database().ref().child( "Notificações/" + data_notificacao.uid ).set( data_notificacao );
+                firebase.database().ref().child( "Notificações/Turma/" + data_notificacao.nome_turma ).set( data_notificacao );
                 firebase.database().ref().child( "Turmas/" + data_turma.escola ).set( data_turma );
                 firebase.database().ref().child( "Tokens/" + data_token.key ).set( data_token ).then( function() {
                     alert(`Novo token de turma criado com sucesso! Código do token:${data_token.key}`);
