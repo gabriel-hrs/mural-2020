@@ -23,11 +23,11 @@
         </div>
         <div class="input-group text-field mb-4">
           <h2 class="label-field">Sua série</h2>
-          <input type="text" id="serie-aluno" class="readonly-input" name="serie" value="#8-serie" placeholder="#8-serie" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
+          <input type="text" id="serie-aluno" class="readonly-input" name="serie" value="" placeholder="" aria-label="Série do aluno" aria-describedby="Série do aluno" readonly>
         </div>
         <div class="input-group text-field mb-4">
           <h2 class="label-field">Sua escola</h2>
-          <input type="text" id="escola-aluno" class="readonly-input" name="escola" value="#anhembi-morumbi" placeholder="#anhembi-morumbi" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
+          <input type="text" id="escola-aluno" class="readonly-input" name="escola" value="" placeholder="" aria-label="Escola do aluno" aria-describedby="Escola do aluno" readonly>
         </div>
         <div class="input-group text-field mb-4">
           <h2 class="label-field">Fonte</h2>
@@ -39,7 +39,7 @@
         </div>     
         <div class="input-group text-field textarea-field mb-4">
           <h2 class="label-field">Resumo</h2>
-          <input type="textarea" class="form-control" name="resumo" placeholder="Digite seu resumo" aria-label="Resumo do registro" aria-describedby="Resumo do registro"></input>
+          <input type="textarea" id="resumo-registro" class="form-control" name="resumo" placeholder="Digite seu resumo" aria-label="Resumo do registro" aria-describedby="Resumo do registro"></input>
         </div>
       </div>
     
@@ -84,8 +84,8 @@
       </div> 
       
       <div class="btn-send-registro">
-        <button type="button" id="prevBtn" class="btn-circle btn-confirm" onclick="nextPrev(-1)">⟵</button>
-        <button type="button" id="nextBtn" class="btn-circle btn-confirm" onclick="nextPrev(1)">➝</button>
+        <button type="button" id="prevBtn" class="btn-circle btn-confirm">⟵</button>
+        <button type="button" id="nextBtn" class="btn-circle btn-confirm">➝</button>
       </div>
 
     </form>

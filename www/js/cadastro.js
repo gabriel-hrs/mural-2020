@@ -8,6 +8,11 @@ $(document).ready(function() {
   var userCity = $( "#user-city" );
   var userPassword = $( "#user-password" );
   var userConfirmPassword = $( "#user-confirm-password" );
+  // localStorage.setItem( "escolaTurma", item.val().escola );
+  var serie = localStorage.getItem( "serieTurma" );
+  var cidade = localStorage.getItem( "cidadeTurma" );
+  var estado = localStorage.getItem( "estadoTurma" );
+  var token = localStorage.getItem( "token" );
 
   var image = "";
   var imageName = "";
@@ -25,8 +30,29 @@ $(document).ready(function() {
     imageName = file.name;
   });
 
+  /* Exibir informações nos campos */
+  // db.ref( `Tokens/${token}` ).on( "value", function( snapshot ) {
+  //   snapshot.forEach( function( item ) {
+  //     var key = item.key;
+  //     $( `.${key}` ).val( item.val() );
+
+  //     if( key == 'estado' ) {
+  //         // $('.estado').filter(function() { 
+  //         //     return ($(this).val() == item.val()); //To select Blue
+  //         // }).prop('selected', true);
+  //         // $( `.estado[value='${item.val()}']` ).prop('selected', true);
+  //         // $(".estado").prop('selected', true);
+  //         $("#states").val(item.val());
+  //         console.log(item.val());
+  //     }
+  //     // var user = firebase.auth().currentUser;
+  //     // $(".senha").val( user.getToken() );
+  //   });
+  // });
+
   $( ".page-title" ).text( `Cadastro ${localStorage.getItem( "userType" )}` ); // Exibir do LocalStorage o tipo de usuário no título da página
 
+  /* Cadastrar novo usuário */
   $( ".btn-confirm" ).on( "click", function( event ) {
     event.preventDefault();
 

@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
     temas += "<option class='option-select' value='' placeholder='#tema' selected>Selecione um #tema</option>";
    
     snapshot.forEach(function( tema ) {
-      temas += `<option class='option-select' value=#${tema.val().nome}>#${tema.val().nome}</option>`;
+      temas += `<option class='option-select' value='${tema.val().nome}'>#${tema.val().nome}</option>`;
     });
     
     temas += "</select>";
@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
         image = file;
         imageName = file.name;
       });  
-
+      
       firebase.database().ref("Usuarios").on("value", function(snapshot) {       
         snapshot.forEach(function( item ) {
           if( item.val().uid == uid ) {
@@ -81,13 +81,80 @@ jQuery(document).ready(function($) {
           }
         });
       });
+            
+      /* Validação do Multi Step Form */
+      var currentTab = 0; 
+      showTab(currentTab);
 
-      $( "#nextBtn" ).on( "click", function( novoTema ) {
-        novoTema.preventDefault();
-        var clicks = $(this).data('clicks');
+      function showTab(n) {
+        $(".tab").eq(n).css({
+          "display": "block"
+        });
         
-        if (clicks) {        
-          let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
+        if (n == 0) {
+          $("#prevBtn").css({
+            "display": "none"
+          });
+        } else {
+          $("#prevBtn").css({
+            "display": "inline"
+          });
+        }
+      }
+
+      $("#prevBtn").on("click", function(){
+        nextPrev(-1);
+      });
+
+      $("#nextBtn").on("click", function(){
+        nextPrev(1);
+      });
+
+      function nextPrev(n) {
+        var x = $(".tab");
+
+        if ( n == 1 && !validateForm() ) {
+          return false;
+        }
+        
+        x.eq(currentTab).css({
+          "display": "none"
+        });
+
+        currentTab = currentTab + n;
+        
+        if (currentTab >= x.length) {
+          sendRegistro();
+        }
+        
+        showTab(currentTab);
+      }
+
+      function validateForm() {
+        var x, y, i, valid = true;
+        x = $(".tab");
+        y = x.eq(currentTab).find(".form-control");
+        
+        for (i = 0; i < y.length; i++) {
+          
+          if ( y.eq(i).value == "" ) {
+            y.eq(i).addClass("invalid");
+            valid = false;
+          } else {
+            y.eq(i).addClass("finish");
+            valid = true;
+          }
+        }
+        
+        if (valid) {
+          $(".btn-confirm").eq(currentTab).addClass("btn-orange");
+        }
+        return valid;
+      }
+
+     function sendRegistro() {
+       console.log($( "#fonte-text" ).val());
+        let setStorage = firebase.storage().ref( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).put( image ); // Guardar no LocalStorage a foto do usuário
           setStorage.on( "state_changed",
           function ProgressEvent( snapshot ) {
             var porcentagem = ( snapshot.bytesTransferred / snapshot.totalBytes ) * 100;
@@ -96,19 +163,18 @@ jQuery(document).ready(function($) {
           function error( error ) {
             console.log( error );
           },
-          function complete() { 
+          function complete() {            
             storageRef.child( `${firebase.auth().currentUser.uid}/Registros/${imageName}` ).getDownloadURL().then( function( url ) {
               let data_registro = {
                 uid: firebase.auth().currentUser.uid,
-                nome_aluno: nameUser,
+                nome_aluno: nomeAluno,
                 imagem: imageName,
                 url_imagem: url,
-                nome_turma: $( "#escola" ).val(),
                 tema: $( "#temas option:selected" ).val(),
-                resumo: $( "#descricao-tema" ).val(),
+                resumo: $( "#resumo-registro" ).val(),
                 serie: $("#serie-aluno").val(),
                 escola: $("#escola-aluno").val(),
-                fonte: $( "#fonte-link option:selected" ).val(),
+                fonte: $( "#fonte-text" ).val(),
                 status: 'enviado'
               };
 
@@ -122,78 +188,22 @@ jQuery(document).ready(function($) {
                 imagem: imagemAluno,
                 // url_imagem_aluno: urlAluno,
                 nome_aluno: nomeAluno,
-                nome_turma: $( "#escola" ).val(),
+                nome_turma: $( "#escola-aluno" ).val(),
                 mensagem: ' enviou um novo registro. Esperando por avaliação do professor.',
                 status: 'enviado',
                 tipo: tipo,
                 data: firebase.database.ServerValue.TIMESTAMP
               };
 
-              firebase.database().ref().child( "Notificações/Professor" + data_notificacao.uid ).set( data_notificacao );            
+              firebase.database().ref().child( "Notificações/Professor/" + firebase.auth().currentUser.uid ).set( data_notificacao );            
               firebase.database().ref().child( "Usuarios/" + firebase.auth().currentUser.uid + "/Imagens/Registros" ).set( data_imagem );
-              firebase.database().ref().child( "Registros/" + data_registro.serie + "/" + data_registro.uid ).set( data_registro ).then( function() {
+              firebase.database().ref().child( "Registros/" + data_registro.serie + "/" + firebase.auth().currentUser.uid ).set( data_registro ).then( function() {
                 console.log( "Upload realizado com sucesso!" );
-                document.getElementById("regForm").submit();
                 window.location.assign( "mural.html" );
               });
             });
           });
-        }
-        $(this).data("clicks", !clicks);
-      });
+      }
     }
   });
 });
-
-/* Validação do Multi Step Form */
-var currentTab = 0; 
-showTab(currentTab);
-
-function showTab(n) {
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
-}
-
-function nextPrev(n) {
-  var x = document.getElementsByClassName("tab");
-
-  if (n == 1 && !validateForm()) return false;
-  
-  x[currentTab].style.display = "none";
-  currentTab = currentTab + n;
-  
-  if (currentTab >= x.length) {
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  
-  showTab(currentTab);
-}
-
-function validateForm() {
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByClassName("form-control");
-  
-  for (i = 0; i < y.length; i++) {
-    
-    if (y[i].value == "") {
-      y[i].className += " invalid";
-      valid = false;
-    } else {
-      y[i].className += " finish";
-      valid = true;
-    }
-  }
-  
-  if (valid) {
-    document.getElementsByClassName("btn-confirm")[currentTab].className += " btn-orange";
-  }
-  return valid;
-}

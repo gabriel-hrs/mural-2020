@@ -11,16 +11,22 @@ $(document).ready(function() {
             db.ref( `Usuarios/${uid}` ).on( "value", function( snapshot ) {
                 snapshot.forEach( function( item ) {
                     var key = item.key;
-                    $( `.${key}` ).val( item.val() );
 
                     if( key == 'estado' ) {
+                        $("#states").find(".estado").each(function( estado ){
+                            if( $(this).val() == item.val() ) {
+                                $(this).prop('selected', true);
+                            }
+                        });
                         // $('.estado').filter(function() { 
                         //     return ($(this).val() == item.val()); //To select Blue
                         // }).prop('selected', true);
-                        // $( `.estado[value='${item.val()}']` ).prop('selected', true);
-                        // $(".estado").prop('selected', true);
-                        $("#states").val(item.val());
+                        // $( `.estado[value='${item.val()}']` ).attr('selected', true);
+                        // // $(".estado").prop('selected', true);
+                        // $("#states").val(item.val());
                         console.log(item.val());
+                    } else {
+                        $( `.${key}` ).val( item.val() );
                     }
                     // var user = firebase.auth().currentUser;
                     // $(".senha").val( user.getToken() );
