@@ -174,25 +174,25 @@ jQuery(document).ready(function($) {
                 resumo: $( "#resumo-registro" ).val(),
                 serie: $("#serie-aluno").val(),
                 escola: $("#escola-aluno").val(),
-                fonte: $( "#fonte-text" ).val(),
+                // fonte: $( "#fonte-text" ).val(),
                 status: 'enviado'
               };
 
               let data_imagem = {
                 imagem: imageName,
-                url_imagem: url
+                url: url
               };
 
               let data_notificacao = {
                 uid: firebase.auth().currentUser.uid,
                 imagem: imagemAluno,
-                // url_imagem_aluno: urlAluno,
-                nome_aluno: nomeAluno,
+                url: url,
+                nome: nomeAluno,
                 nome_turma: $( "#escola-aluno" ).val(),
                 mensagem: ' enviou um novo registro. Esperando por avaliação do professor.',
                 status: 'enviado',
                 tipo: tipo,
-                data: firebase.database.ServerValue.TIMESTAMP
+                data: Date.now()
               };
 
               firebase.database().ref().child( "Notificações/Professor/" + firebase.auth().currentUser.uid ).set( data_notificacao );            
