@@ -90,6 +90,8 @@
 
 .mural-page .card-content .card-image img {
     max-width: 100vw;
+    min-height: 380px;
+    object-fit: contain;
 }
 
 .mural-page .card-content .registro-fonte {

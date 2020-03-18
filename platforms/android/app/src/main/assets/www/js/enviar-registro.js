@@ -175,8 +175,10 @@ jQuery(document).ready(function($) {
               let data_registro = {
                 uid: firebase.auth().currentUser.uid,
                 nome_aluno: localStorage.getItem( "nome" ),
-                imagem: localStorage.getItem( "imagem" ),
-                url_imagem: localStorage.getItem( "url" ),
+                imagem_aluno: localStorage.getItem( "imagem" ),
+                url_aluno: localStorage.getItem( "url" ),
+                imagem: imageName,
+                url: url,
                 tema: $( "#temas option:selected" ).val(),
                 resumo: $( "#resumo-registro" ).val(),
                 serie: $("#serie-aluno").val(),

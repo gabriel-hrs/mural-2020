@@ -41,13 +41,11 @@ $(document).ready(function() {
                         $("#reject").css("opacity", "0");
                         $("#accept").css("opacity", "0");
                     }       
-                    console.log(registro.val());
+                    console.log(registro);
 
                     registros += "<div class='card-header'>";
                         registros += "<div class='perfil btn-circle default-photo'>";
-                            if( registro.key == registro.val().url_imagem ) {
-                                registros += `<img class='icon' src='${registro.val()}' alt='Imagem padrão de perfil'>`;
-                            }
+                            registros += `<img class='icon' src='${registro.val().url_aluno}' alt='Imagem padrão de perfil'>`;
                         registros += "</div>";
                         registros += `<h2 class='name text-bold'>${registro.val().nome_aluno}</h2>`;           
                         registros += `<span class='school'>${registro.val().escola} - ${registro.val().serie}</span>`;
@@ -61,9 +59,9 @@ $(document).ready(function() {
                     registros += "<div class='card-body'>";
                         registros += "<div class='card-content'>";
                             registros += "<div class='card-image'>";
-                                registros += "<img src='img/registro-teste.png' alt='Imagem do registro'>";
+                                registros += `<img src='${registro.val().url}' alt='Imagem do registro'>`;
                                 registros += "<div class='registro-fonte'>";
-                                    registros += `<span>${registro.val().fonte}</span>`;
+                                    registros += `<span>Link para registro</span>`;
                                 registros += "</div>";
                             registros += "</div>";
                             registros += "<div class='container registro-options'>";

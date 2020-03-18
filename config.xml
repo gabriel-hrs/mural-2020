@@ -19,7 +19,7 @@
     <platform name="android">
         <preference name="loadUrlTimeoutValue" value="700000" />
         <allow-intent href="market:*" />
-        <icon src="www/img/favicon_2.png" platform="android" width="57" height="57" density="mdpi" />
+        <icon src="www/img/favicon.png" platform="android" width="57" height="57" density="mdpi" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
